@@ -21,7 +21,7 @@ const Navbar = () => {
         </NavLink>
 
         {/* Desktop menu */}
-        <div className="hidden md:flex gap-2">
+        <div className="hidden lg:flex gap-2">
           <NavLink to="/" className={linkClass}>
             INICIO
           </NavLink>
@@ -44,7 +44,7 @@ const Navbar = () => {
 
         {/* Hamburger */}
         <button
-          className="md:hidden text-gray-700 focus:outline-none"
+          className="lg:hidden text-gray-700 focus:outline-none cursor-pointer"
           onClick={() => setOpen(!open)}
           aria-label="Abrir menú"
         >
@@ -75,7 +75,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div
         className={`
-          md:hidden
+          lg:hidden
           overflow-hidden
           transition-all duration-300
           ${open ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}
