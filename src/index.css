@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo-slider {
+  animation: logo-scroll 25s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: white;
+}
