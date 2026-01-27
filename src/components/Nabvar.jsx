@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-// import logo from "../assets/logo_Kynet.svg";
+import logo from "../assets/logo_kynet.svg";
 
 const Navbar = () => {
   const base = "px-4 py-1 text-xl font-medium transition duration-300";
@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className=" bg-white shadow-md">
       <div className="flex items-center justify-center px-6 py-4 gap-12">
-        {/* <img src={logo} alt="Kynet Logo" className="h-18" /> */}
+        <img src={logo} alt="Kynet Logo" className="h-18" />
 
         <div className="flex gap-2">
           <NavLink
