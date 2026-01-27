@@ -22,7 +22,7 @@ const ParticiparModal = ({ open, onClose, type }) => {
         <div className="flex justify-end px-6 pb-6">
           <button
             onClick={onClose}
-            className="rounded bg-gray-700 px-6 py-2 text-sm font-semibold text-white"
+            className="rounded bg-gray-700 px-6 py-2 cursor-pointer text-sm font-semibold text-white"
           >
             Cerrar
           </button>

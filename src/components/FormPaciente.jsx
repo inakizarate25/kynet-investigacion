@@ -16,6 +16,7 @@ const FormPaciente = () => {
           font-semibold
           text-gray-900
           hover:opacity-90
+          cursor-pointer
         "
       >
         Enviar
