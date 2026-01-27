@@ -22,61 +22,68 @@ const Investigadores = () => {
   });
 
   return (
-    <section className="bg-muted py-14 px-6 bg-gray-50">
-      <div className="mx-auto max-w-7xl">
-        {/* Title */}
-        <h1 className="mb-6 text-3xl font-bold text-dark">Investigadores</h1>
+    <>
+      {/* Title */}
+      <section className="relative h-[40vh] w-full bg-gray-800">
+        <div className="absolute inset-0 bg-gray-900/60"></div>
 
-        {/* Search */}
-        <input
-          type="text"
-          placeholder="Buscar por nombre, apellido, rol o especialidad"
-          className="mb-6 w-full rounded-lg border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+        <div className="relative z-10 flex h-full items-center justify-center">
+          <h1 className="text-4xl font-bold text-white">Investigadores</h1>
+        </div>
+      </section>
+      <section className="py-14 px-6 bg-gray-50 flex min-h-screen w-full">
+        <div className="mx-auto max-w-7xl">
+          {/* Search */}
+          <input
+            type="text"
+            placeholder="Buscar por nombre, apellido, rol o especialidad"
+            className="mb-6 w-full rounded-lg border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+          />
 
-        {/* Alphabet filter */}
-        <div className="mb-8 flex flex-wrap gap-2 ">
-          <button
-            onClick={() => setLetter("All")}
-            className={`px-3 py-1 text-sm rounded border transition cursor-pointer ${
-              letter === "All"
-                ? "border-[#e2ec55] bg-[#e2ec55]/10 text-dark font-semibold"
-                : "border-gray-300 text-gray-600 hover:border-[#e2ec55]"
-            }`}
-          >
-            All
-          </button>
-
-          {alphabet.map((l) => (
+          {/* Alphabet filter */}
+          <div className="mb-8 flex flex-wrap gap-2 ">
             <button
-              key={l}
-              onClick={() => setLetter(l)}
+              onClick={() => setLetter("All")}
               className={`px-3 py-1 text-sm rounded border transition cursor-pointer ${
-                letter === l
+                letter === "All"
                   ? "border-[#e2ec55] bg-[#e2ec55]/10 text-dark font-semibold"
                   : "border-gray-300 text-gray-600 hover:border-[#e2ec55]"
               }`}
             >
-              {l}
+              All
             </button>
-          ))}
-        </div>
 
-        {/* Results */}
-        <p className="mb-6 text-sm text-grayText">
-          {filtered.length} resultados encontrados
-        </p>
+            {alphabet.map((l) => (
+              <button
+                key={l}
+                onClick={() => setLetter(l)}
+                className={`px-3 py-1 text-sm rounded border transition cursor-pointer ${
+                  letter === l
+                    ? "border-[#e2ec55] bg-[#e2ec55]/10 text-dark font-semibold"
+                    : "border-gray-300 text-gray-600 hover:border-[#e2ec55]"
+                }`}
+              >
+                {l}
+              </button>
+            ))}
+          </div>
 
-        {/* Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((inv) => (
-            <InvestigatorCard key={inv.id} investigator={inv} />
-          ))}
+          {/* Results */}
+          <p className="mb-6 text-sm text-grayText">
+            {filtered.length} resultados encontrados
+          </p>
+
+          {/* Grid */}
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((inv) => (
+              <InvestigatorCard key={inv.id} investigator={inv} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

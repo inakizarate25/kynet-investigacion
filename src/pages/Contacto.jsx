@@ -96,7 +96,7 @@ const Contacto = () => {
       <div className="bg-gray-100 flex items-center justify-center mb-16 gap-8 flex-wrap">
         <div className="flex items-center gap-4 bg-[#e2ec55] p-4 mb-4 w-auto h-20 rounded-2xl shadow-xl">
           <img src={phone} alt="phone" className="h-8" />
-          <p className="text-xl">11 4093 3209</p>
+          <p className="text-xl">+54 9 11 4093 3209</p>
         </div>
         <div className="flex items-center gap-4 bg-gray-700 p-4 mb-4 w-auto h-20 rounded-2xl shadow-2xl">
           <img src={location} alt="location" className="h-8" />

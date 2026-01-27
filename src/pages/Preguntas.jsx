@@ -3,23 +3,32 @@ import { faqs } from "../data/faqs.js";
 
 const Preguntas = () => {
   return (
-    <section className="bg-muted px-6 py-16">
-      <div className="mx-auto max-w-7xl">
-        {/* Title */}
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-dark">Preguntas frecuentes</h2>
+    <>
+      {/* Title */}
+      <section className="relative h-[40vh] w-full bg-gray-800">
+        <div className="absolute inset-0 bg-gray-900/60"></div>
 
-          <div className="mx-auto mt-3 h-1 w-20 rounded-full bg-[#e2ec55]" />
+        <div className="relative z-10 flex h-full items-center justify-center">
+          <h2 className="text-4xl font-bold text-white">
+            Preguntas Frecuentes
+          </h2>
         </div>
-
-        {/* Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {faqs.map((faq) => (
-            <FaqCard key={faq.id} question={faq.question} answer={faq.answer} />
-          ))}
+      </section>
+      <section className="bg-muted px-6 py-16">
+        <div className="mx-auto max-w-7xl">
+          {/* Grid */}
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {faqs.map((faq) => (
+              <FaqCard
+                key={faq.id}
+                question={faq.question}
+                answer={faq.answer}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

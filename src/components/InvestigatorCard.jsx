@@ -29,9 +29,7 @@ const InvestigatorCard = ({ investigator }) => {
           alt={`${firstName} ${lastName}`}
           className="
             h-[140px] w-[120px]
-            rounded-md
-            border-2
-            border-[#e2ec55]
+            rounded-md        
             bg-white
             object-cover
           "
