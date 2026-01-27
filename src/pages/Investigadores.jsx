@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InvestigatorCard from "../components/InvestigatorCard.jsx";
-import { investigators } from "../data/investigators.jsx";
+import { investigators } from "../data/investigators.js";
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const Investigadores = () => {
