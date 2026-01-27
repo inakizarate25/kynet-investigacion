@@ -1,4 +1,4 @@
-import profileImg from "./../assets/prof.jpg";
+import profileImg from "../assets/prof.jpg";
 
 const InvestigatorCard = ({ investigator }) => {
   const { firstName, lastName, title, role, specialty, description, image } =

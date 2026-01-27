@@ -1,4 +1,4 @@
-import img from "./../assets/logo_kynet.svg";
+import img from "../assets/logo_kynet.svg";
 
 const logos = Array(8).fill(img);
 
