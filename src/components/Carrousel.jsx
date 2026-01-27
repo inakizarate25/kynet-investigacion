@@ -9,30 +9,30 @@ const logos = [img, img1, img2, img3, img4, img5];
 
 const Carousel = () => {
   return (
-    <section className="w-7xl py-10 self-center">
-      <h2 className="mb-10 pl-6 text-xl font-bold text-gray-700">
-        NOS ACOMPAÑAN
+    <section className="py-12 w-[90vw] mx-auto ">
+      <h2 className="mb-10 px-4 text-center text-xl font-bold text-gray-700 sm:text-2xl">
+        Nos acompañan
       </h2>
 
-      <div className="relative overflow-hidden w-[95%] mx-auto max-w-7xl">
-        <div className="flex w-max gap-14 logo-slider">
+      <div className="relative mx-auto max-w-7xl overflow-hidden">
+        <div className="flex gap-10 animate-logo-scroll">
           {/* Primera tanda */}
           {logos.map((logo, index) => (
             <img
-              key={`logo-1-${index}`}
+              key={`logo-${index}`}
               src={logo}
-              alt="Logo Kynet"
-              className="h-10 opacity-80  transition"
+              alt="Logo sponsor"
+              className="h-8 sm:h-10 opacity-80 transition"
             />
           ))}
 
-          {/* Segunda tanda (duplicada para loop infinito) */}
+          {/* Segunda tanda */}
           {logos.map((logo, index) => (
             <img
-              key={`logo-1-${index}`}
+              key={`logo-dup-${index}`}
               src={logo}
-              alt="Logo Kynet"
-              className="h-10 opacity-80  transition"
+              alt="Logo sponsor"
+              className="h-8 sm:h-10 opacity-80 transition"
             />
           ))}
         </div>

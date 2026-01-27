@@ -1,76 +1,122 @@
 import { NavLink } from "react-router";
+import { useState } from "react";
 import logo from "../assets/logo_kynet.svg";
 
 const Navbar = () => {
-  const base = "px-4 py-1 text-lg font-medium transition duration-300";
+  const [open, setOpen] = useState(false);
+
+  const base = "px-4 py-2 text-lg font-medium transition duration-300";
+
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? `${base} text-gray-700 font-semibold border-b-4 border-[#e2ec55]`
+      : `${base} text-gray-700 hover:text-[#e2ec55]`;
 
   return (
-    <nav className=" bg-white shadow-md">
-      <div className="flex items-center justify-center px-6 py-4 gap-12">
-        <NavLink to="/">
-          <img src={logo} alt="Kynet Logo" className="h-14" />
+    <nav className="bg-white shadow-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <NavLink to="/" onClick={() => setOpen(false)}>
+          <img src={logo} alt="Kynet Logo" className="h-12 md:h-14" />
         </NavLink>
-        <div className="flex gap-2">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive
-                ? `${base} text-gray-700 font-semibold hover:text-[#e2ec55] border-b-4 border-[#e2ec55]`
-                : `${base} text-gray-700 hover:text-[#e2ec55]`
-            }
-          >
+
+        {/* Desktop menu */}
+        <div className="hidden md:flex gap-2">
+          <NavLink to="/" className={linkClass}>
             INICIO
           </NavLink>
+          <NavLink to="/investigadores" className={linkClass}>
+            INVESTIGADORES
+          </NavLink>
+          <NavLink to="/programas" className={linkClass}>
+            PROGRAMAS
+          </NavLink>
+          <NavLink to="/preguntas" className={linkClass}>
+            Q&A
+          </NavLink>
+          <NavLink to="/contacto" className={linkClass}>
+            CONTACTO
+          </NavLink>
+          <NavLink to="/participacion" className={linkClass}>
+            QUIERO PARTICIPAR
+          </NavLink>
+        </div>
 
+        {/* Hamburger */}
+        <button
+          className="md:hidden text-gray-700 focus:outline-none"
+          onClick={() => setOpen(!open)}
+          aria-label="Abrir menú"
+        >
+          <svg
+            className="h-7 w-7"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            {open ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`
+          md:hidden
+          overflow-hidden
+          transition-all duration-300
+          ${open ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}
+        `}
+      >
+        <div className="flex flex-col border-t bg-white py-4">
+          <NavLink onClick={() => setOpen(false)} to="/" className={linkClass}>
+            INICIO
+          </NavLink>
           <NavLink
+            onClick={() => setOpen(false)}
             to="/investigadores"
-            className={({ isActive }) =>
-              isActive
-                ? `${base} text-gray-700 font-semibold hover:text-[#e2ec55] border-b-4 border-[#e2ec55]`
-                : `${base} text-gray-700 hover:text-[#e2ec55]`
-            }
+            className={linkClass}
           >
             INVESTIGADORES
           </NavLink>
-
           <NavLink
+            onClick={() => setOpen(false)}
             to="/programas"
-            className={({ isActive }) =>
-              isActive
-                ? `${base} text-gray-700 font-semibold hover:text-[#e2ec55] border-b-4 border-[#e2ec55]`
-                : `${base} text-gray-700 hover:text-[#e2ec55]`
-            }
+            className={linkClass}
           >
-            PROGRAMAS DE INVESTIGACION
+            PROGRAMAS
           </NavLink>
-
           <NavLink
+            onClick={() => setOpen(false)}
             to="/preguntas"
-            className={({ isActive }) =>
-              isActive
-                ? `${base} text-gray-700 font-semibold hover:text-[#e2ec55] border-b-4 border-[#e2ec55]`
-                : `${base} text-gray-700 hover:text-[#e2ec55]`
-            }
+            className={linkClass}
           >
             Q&A
           </NavLink>
           <NavLink
+            onClick={() => setOpen(false)}
             to="/contacto"
-            className={({ isActive }) =>
-              isActive
-                ? `${base} text-gray-700 font-semibold hover:text-[#e2ec55] border-b-4 border-[#e2ec55]`
-                : `${base} text-gray-700 hover:text-[#e2ec55]`
-            }
+            className={linkClass}
           >
             CONTACTO
           </NavLink>
           <NavLink
+            onClick={() => setOpen(false)}
             to="/participacion"
-            className={({ isActive }) =>
-              isActive
-                ? `${base} text-gray-700 font-semibold hover:text-[#e2ec55] border-b-4 border-[#e2ec55]`
-                : `${base} text-gray-700 hover:text-[#e2ec55]`
-            }
+            className="mx-4 mt-3 rounded bg-[#e2ec55] px-4 py-3 text-center font-semibold text-gray-800"
           >
             QUIERO PARTICIPAR
           </NavLink>
@@ -79,4 +125,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;

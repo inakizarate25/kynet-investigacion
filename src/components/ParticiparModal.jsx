@@ -4,8 +4,8 @@ const ParticiparModal = ({ open, onClose, type }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition duration-300">
-      <div className="w-full max-w-md rounded-xl bg-white shadow-xl">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition duration-300 ">
+      <div className="max-w-[400px] w-full rounded-xl bg-white shadow-xl">
         {/* Header */}
         <div className="rounded-t-xl bg-gray-700 px-6 py-4 text-white">
           <h2 className="text-lg font-semibold">

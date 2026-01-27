@@ -9,7 +9,7 @@ const Programas = () => {
         <div className="absolute inset-0 bg-gray-900/60"></div>
 
         <div className="relative z-10 flex h-full items-center justify-center">
-          <h2 className="text-4xl font-bold text-white">
+          <h2 className="text-4xl font-bold text-white text-center">
             Programas de investigación
           </h2>
         </div>

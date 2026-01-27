@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Hero />
       <section className="min-h-screen flex flex-col bg-gray-100 w-full">
-        <div className="flex justify-center border-b w-full py-10">
+        <div className="flex flex-col justify-center items-center border-b py-10 md:flex-row">
           <Card1
             titulo={"+ de 20 años de experiencia"}
             info={
@@ -42,7 +42,7 @@ const Home = () => {
           />
         </div>
         <Carrousel />
-        <section className="flex flex-col justify-center items-center px-6 py-10 mt-14">
+        <section className="flex flex-col justify-center items-center px-10 py-10 mt-14 ">
           <h3 className="text-lg font-bold text-gray-600">
             INVESTIGACIÓN CLINICA
           </h3>
@@ -50,7 +50,7 @@ const Home = () => {
             ¿Qué hay que saber para ser parte de un estudio?
           </h4>
           <p className="bg-gray-900 h-1 w-25 mt-2"></p>
-          <p className="text-center max-w-2xl mt-4 text-gray-700 w-120">
+          <p className="text-center max-w-2xl w-[90vw] mt-4 text-gray-700 w-120">
             Cada ensayo implica una nueva medicacion que podria mejorar algun
             aspecto de la salud y la calidad de vida de las personas
           </p>
@@ -82,8 +82,8 @@ const Home = () => {
             </div>
           </article>
         </section>
-        <section className="flex justify-around items-center bg-white px-10 py-14 mt-10 h-80">
-          <div className="flex flex-col gap-4 w-1/2">
+        <section className="flex justify-around items-center flex-col xl:flex-row bg-white px-10 py-14 mt-10 h-auto gap-10">
+          <div className="flex flex-col gap-4 w-full xl:w-1/2">
             <h4 className="text-4xl font-bold text-gray-700">
               Un ensayo para Mi
             </h4>
