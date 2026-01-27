@@ -1,6 +1,7 @@
 const FaqCard = ({ question, answer }) => {
   return (
     <div
+      tabIndex={0}
       className="
         group
         relative
@@ -11,12 +12,14 @@ const FaqCard = ({ question, answer }) => {
         bg-gray-100
         p-6
         text-center
-        transition
-        hover:bg-gray-700
         shadow-lg
+        transition
+        outline-none
+        hover:bg-gray-700
+        focus:bg-gray-700
       "
     >
-      {/* Question */}
+      {/* QUESTION */}
       <div
         className="
           flex
@@ -27,10 +30,11 @@ const FaqCard = ({ question, answer }) => {
           transition-all
           duration-300
           group-hover:opacity-0
+          group-focus:opacity-0
         "
       >
         <div className="mb-4 flex justify-center">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#e2ec55] text-[#e2ec55]">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full border-4 border-[#e2ec55] text-[#e2ec55]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -41,17 +45,17 @@ const FaqCard = ({ question, answer }) => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={4}
                 d="M12 4v16m8-8H4"
               />
             </svg>
           </div>
         </div>
 
-        <p className="font-medium text-dark text-2xl">{question}</p>
+        <p className="text-2xl font-medium text-gray-800">{question}</p>
       </div>
 
-      {/* Answer */}
+      {/* ANSWER */}
       <div
         className="
           absolute
@@ -60,19 +64,21 @@ const FaqCard = ({ question, answer }) => {
           items-center
           justify-center
           px-6
-          text-sm
+          text-lg
           leading-relaxed
           text-gray-200
+          bg-gray-700
           opacity-0
           translate-y-6
           transition-all
           duration-300
-          group-hover:translate-y-0
           group-hover:opacity-100
-          bg-gray-700
+          group-hover:translate-y-0
+          group-focus:opacity-100
+          group-focus:translate-y-0
         "
       >
-        <p className="text-gray-200 text-lg">{answer}</p>
+        <p>{answer}</p>
       </div>
     </div>
   );
