@@ -1,6 +1,6 @@
-import phone from "./../assets/phone.svg";
-import email from "./../assets/envelope.svg";
-import location from "./../assets/map-marker.svg";
+import phone from "../assets/phone.svg";
+import email from "../assets/envelope.svg";
+import location from "../assets/map-marker.svg";
 const Contacto = () => {
   return (
     <>

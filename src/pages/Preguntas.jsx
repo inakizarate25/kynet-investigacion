@@ -1,5 +1,5 @@
-import FaqCard from "./../components/FaqCard";
-import { faqs } from "./../data/faqs";
+import FaqCard from "../components/FaqCard.jsx";
+import { faqs } from "../data/faqs.js";
 
 const Preguntas = () => {
   return (

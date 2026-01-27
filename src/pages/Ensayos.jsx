@@ -1,6 +1,6 @@
 import { Link } from "react-router";
-import Highlight from "./../components/Highlight";
-import Card from "./../components/Card";
+import Highlight from "../components/Highlight.jsx";
+import Card from "../components/Card.jsx";
 const Ensayos = () => {
   return (
     <main className="bg-gray-100 px-6 py-20">

@@ -1,14 +1,14 @@
-import Hero from "./../components/Hero";
-import Card1 from "./../components/Card1";
-import Carrousel from "./../components/Carrousel";
+import Hero from "../components/Hero.jsx";
+import Card1 from "../components/Card1.jsx";
+import Carrousel from "../components/Carrousel.jsx";
 import { NavLink } from "react-router";
-import user from "./../assets/user-plus.svg";
-import smile from "./../assets/smile.svg";
-import shild from "./../assets/shield-check.svg";
-import prescription from "./../assets/prescription-bottle.svg";
-import user1 from "./../assets/user-minus.svg";
-import heart from "./../assets/heart-medical.svg";
-import profile from "./../assets/prof.svg";
+import user from "../assets/user-plus.svg";
+import smile from "../assets/smile.svg";
+import shild from "../assets/shield-check.svg";
+import prescription from "../assets/prescription-bottle.svg";
+import user1 from "../assets/user-minus.svg";
+import heart from "../assets/heart-medical.svg";
+import profile from "../assets/prof.svg";
 
 const Home = () => {
   return (

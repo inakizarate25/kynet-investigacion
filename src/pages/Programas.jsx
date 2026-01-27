@@ -1,5 +1,5 @@
-import ProgramaCard from "./../components/ProgramaCard";
-import { programas } from "./../data/programas";
+import ProgramaCard from "../components/ProgramaCard.jsx";
+import { programas } from "../data/programas.js";
 
 const Programas = () => {
   return (

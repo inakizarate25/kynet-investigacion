@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
-import { programas } from "./../data/programas";
-import ProgramDoctorCard from "./../components/ProgramDoctorCard";
+import { programas } from "../data/programas.js";
+import ProgramDoctorCard from "../components/ProgramDoctorCard.jsx";
 
 const ProgramaDetalle = () => {
   const { slug } = useParams();
