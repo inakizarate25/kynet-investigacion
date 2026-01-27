@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Hero />
       <section className="min-h-screen flex flex-col bg-gray-100 w-full">
-        <div className="flex justify-center border-b-1 w-full py-10">
+        <div className="flex justify-center border-b w-full py-10">
           <Card1
             titulo={"+ de 20 años de experiencia"}
             info={
@@ -46,37 +46,37 @@ const Home = () => {
           <h3 className="text-lg font-bold text-gray-600">
             INVESTIGACIÓN CLINICA
           </h3>
-          <h4 className="text-3xl font-semibold w-[400px] text-center">
+          <h4 className="text-3xl font-semibold w-100 text-center">
             ¿Qué hay que saber para ser parte de un estudio?
           </h4>
-          <p className="bg-gray-900 h-1 w-[100px] mt-2"></p>
-          <p className="text-center max-w-2xl mt-4 text-gray-700 w-[480px]">
+          <p className="bg-gray-900 h-1 w-25 mt-2"></p>
+          <p className="text-center max-w-2xl mt-4 text-gray-700 w-120">
             Cada ensayo implica una nueva medicacion que podria mejorar algun
             aspecto de la salud y la calidad de vida de las personas
           </p>
           <article className="flex justify-center gap-6 flex-wrap my-10 mt-20">
-            <div className="w-[200px] h-[240px] bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user} alt="" className="h-14" />
               La participacion siempre es voluntaria
             </div>
-            <div className="w-[200px] h-[240px] bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="w-50 h-60 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={smile} alt="" className="h-14" />
               La participacion es gratuita
             </div>
-            <div className="w-[200px] h-[240px] bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={prescription} alt="" className="h-14" />
               El participante recibe medicacion sin costo
             </div>
-            <div className="w-[200px] h-[240px] bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={heart} alt="" className="h-14" />
               El participante recibe atencion medica personalizada sin costo
             </div>
-            <div className="w-[200px] h-[240px] bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="w-50 h-60 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user1} alt="" className="h-14" />
               Los participantes se pueden retirar del estudio en cualquier
               momento
             </div>
-            <div className="w-[200px] h-[240px] bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={shild} alt="" className="h-14" />
               La seguridad del paciente es prioritaria
             </div>

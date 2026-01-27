@@ -84,7 +84,7 @@ const Contacto = () => {
           </div>
 
           {/* RIGHT */}
-          <div className="h-[600px] w-full overflow-hidden rounded-xl shadow-lg">
+          <div className="h-150 w-full overflow-hidden rounded-xl shadow-lg">
             <iframe
               title="Mapa kynet recoleta"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7239060272786!2d-58.39706502330154!3d-34.58585195655657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca9f55f4c767%3A0x71a4e3566083928a!2sKynet%20Recoleta!5e0!3m2!1ses!2sar!4v1769300921205!5m2!1ses!2sar"

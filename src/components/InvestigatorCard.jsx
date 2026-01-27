@@ -28,7 +28,7 @@ const InvestigatorCard = ({ investigator }) => {
           src={image || profileImg}
           alt={`${firstName} ${lastName}`}
           className="
-            h-[140px] w-[120px]
+            h-35 w-30
             rounded-md        
             bg-white
             object-cover
