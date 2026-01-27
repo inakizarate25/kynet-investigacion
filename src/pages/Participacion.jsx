@@ -6,7 +6,7 @@ const Participacion = () => {
       <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
 
-        <div className="relative z-10 flex h-full items-center justify-center">
+        <div className="relative z-10 flex h-full items-center justify-center text-center">
           <h2 className="text-4xl font-bold text-white">
             Participación en ensayos clínicos
           </h2>

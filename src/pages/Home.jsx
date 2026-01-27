@@ -42,11 +42,11 @@ const Home = () => {
           />
         </div>
         <Carrousel />
-        <section className="flex flex-col justify-center items-center px-10 py-10 mt-14 ">
+        <section className="flex flex-col justify-center items-center px-10 py-10 mt-14 w-full">
           <h3 className="text-lg font-bold text-gray-600">
             INVESTIGACIÓN CLINICA
           </h3>
-          <h4 className="text-3xl font-semibold w-100 text-center">
+          <h4 className="text-3xl font-semibold max-w-100  text-center">
             ¿Qué hay que saber para ser parte de un estudio?
           </h4>
           <p className="bg-gray-900 h-1 w-25 mt-2"></p>
