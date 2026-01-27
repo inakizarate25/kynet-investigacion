@@ -75,6 +75,7 @@ const Contacto = () => {
                   text-gray-900
                   transition
                   hover:opacity-90
+                  cursor-pointer
                 "
               >
                 Enviar

@@ -1,6 +1,11 @@
-import img from "../assets/logo_kynet.svg";
+import img from "../assets/amgen-1.svg";
+import img1 from "../assets/ARWR_BIG.svg";
+import img2 from "../assets/astrazeneca-seeklogo.svg";
+import img3 from "../assets/Logo_Bayer.svg.png";
+import img4 from "../assets/biofarma.png";
+import img5 from "../assets/Biogen-logo.png";
 
-const logos = Array(8).fill(img);
+const logos = [img, img1, img2, img3, img4, img5];
 
 const Carousel = () => {
   return (
@@ -17,17 +22,17 @@ const Carousel = () => {
               key={`logo-1-${index}`}
               src={logo}
               alt="Logo Kynet"
-              className="h-12 w-auto opacity-80  transition"
+              className="h-10 opacity-80  transition"
             />
           ))}
 
           {/* Segunda tanda (duplicada para loop infinito) */}
           {logos.map((logo, index) => (
             <img
-              key={`logo-2-${index}`}
+              key={`logo-1-${index}`}
               src={logo}
               alt="Logo Kynet"
-              className="h-12 w-auto opacity-80  transition "
+              className="h-10 opacity-80  transition"
             />
           ))}
         </div>
