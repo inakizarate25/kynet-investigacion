@@ -9,7 +9,7 @@
 }
 
 .logo-slider {
-  animation: logo-scroll 25s linear infinite;
+  animation: logo-scroll 15s linear infinite;
 }
 @keyframes logo-scroll {
   from {
@@ -22,13 +22,13 @@
 
 /* Desktop / default */
 .animate-logo-scroll {
-  animation: logo-scroll 25s linear infinite;
+  animation: logo-scroll 10s linear infinite;
 }
 
 /* Mobile */
 @media (max-width: 640px) {
   .animate-logo-scroll {
-    animation-duration: 10s;
+    animation-duration: 2s;
   }
 }
 

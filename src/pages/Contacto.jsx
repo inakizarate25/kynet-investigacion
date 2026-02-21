@@ -21,13 +21,14 @@ const Contacto = () => {
             {/* Info box */}
             <div className="mb-8 rounded-xl bg-gray-700 p-6 text-gray-200 shadow-lg">
               <p className="leading-relaxed">
-                En <span className="font-semibold text-[#e2ec55]">KYNET</span>{" "}
-                valoramos cada vínculo con nuestra comunidad. Ya sea que tengas
-                preguntas, necesites asistencia o quieras conocer más sobre
-                nuestros servicios, estamos para escucharte y ayudarte. Nuestro
-                equipo dedicado se asegura de que tus consultas sean respondidas
-                de forma rápida y profesional. La transparencia, la comunicación
-                y la atención personalizada son los pilares de nuestro enfoque.
+                Estamos para ayudarte. En{" "}
+                <span className="font-semibold text-[#e2ec55]">KYNET</span>{" "}
+                priorizamos el vínculo con nuestra comunidad a través de una
+                atención rápida, transparente y personalizada. Estamos a tu
+                disposición para despejar dudas, brindarte asistencia o contarte
+                cómo trabajamos. Nos distingue una atención personalizada y
+                humana, asegurando que cada una de tus consultas reciba una
+                respuesta ágil y profesional. Queremos estar cerca tuyo.
               </p>
             </div>
 
@@ -108,7 +109,7 @@ const Contacto = () => {
         </div>
         <div className="flex items-center gap-4 bg-white p-4 mb-4 w-auto h-20 rounded-2xl shadow-xl">
           <img src={email} alt="email" className="h-8" />
-          <p className="text-gray-900 text-2xl">info@kynet.com.ar</p>
+          <p className="text-gray-900 text-2xl">investigacionsc@kynet.com.ar</p>
         </div>
       </div>
     </>

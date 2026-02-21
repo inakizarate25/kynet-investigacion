@@ -22,13 +22,13 @@ const Hero = () => {
         </p>
 
         <h1 className="mb-6 text-3xl font-semibold sm:text-4xl md:text-5xl">
-          Impulsando la innovación en{" "}
-          <span className="text-[#e2ec55]">investigación científica</span>
+          Construyendo hoy la{" "}
+          <span className="text-[#e2ec55]">Medicina del futuro</span>
         </h1>
 
         <p className="max-w-3xl text-base opacity-90 sm:text-lg">
-          Equipo de expertos en ensayos clínicos que brinda datos precisos y
-          atención de alta calidad
+          Calidad humana y técnica al servicio de la investigación clínica
+          internacional
         </p>
       </div>
     </section>

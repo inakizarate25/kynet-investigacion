@@ -8,7 +8,7 @@ import shild from "../assets/shield-check.svg";
 import prescription from "../assets/prescription-bottle.svg";
 import user1 from "../assets/user-minus.svg";
 import heart from "../assets/heart-medical.svg";
-import profile from "../assets/prof.svg";
+import profile from "../assets/profile.jpg";
 
 const Home = () => {
   return (
@@ -17,25 +17,25 @@ const Home = () => {
       <section className="min-h-screen flex flex-col bg-gray-100 w-full">
         <div className="flex flex-col justify-center items-center border-b py-10 md:flex-row">
           <Card1
-            titulo={"+ de 20 años de experiencia"}
+            titulo={"Exelencia cientifica"}
             info={
-              "Contamos con más de dos décadas de experiencia en la gestión de ensayos clínicos, brindando resultados confiables y de alta calidad."
+              "Profesionales de referencia liderando cada etapa de nuestros protocolos. Investigación clínica dirigida por líderes de opinión reconocidos en la comunidad científica latinoamericana e internacional."
             }
             color={"bg-gray-600"}
             textColor={"text-gray-200"}
           />
           <Card1
-            titulo={"+ de 30 ensayos clinicos en curso"}
+            titulo={"Enrolamiento efectivo"}
             info={
-              "El reclutamiento de pacientes tiene una ventana de duracion. Postulate hoy para estar incluido apenas comience el proximo ensayo disponible"
+              "Asumimos un compromiso total con las metas de reclutamiento, buscando alcanzar las metas de enrolamiento pactadas por nuestros Investigadores Principales, asegurando una ejecución eficiente y el cumplimiento de los tiempos establecidos en el cronograma global del estudio"
             }
             color={"bg-[#e2ec55]"}
             textColor={"text-gray-800"}
           />
           <Card1
-            titulo={"FDA, EMA & ANMAT"}
+            titulo={"ANMAT & FDA"}
             info={
-              "Estudios en etapas avanzadas, que ya superaron todas las pruebas de seguridad y ahora comparan la eficacia para igualar o superar el mejor tratamiento disponible"
+              "Estudios en etapas avanzadas, que ya superaron todas las pruebas de seguridad y ahora comparan la eficacia para igualar o superar el mejor tratamiento posible para los pacientes"
             }
             color={"bg-white"}
             textColor={"text-gray-800"}
@@ -46,22 +46,26 @@ const Home = () => {
           <h3 className="text-lg font-bold text-gray-600">
             INVESTIGACIÓN CLINICA
           </h3>
-          <h4 className="text-3xl font-semibold max-w-100  text-center">
-            ¿Qué hay que saber para ser parte de un estudio?
+          <h4 className="text-3xl font-semibold max-w-100 text-center">
+            Lo que necesitas saber antes de participar en un estudio
           </h4>
           <p className="bg-gray-900 h-1 w-25 mt-2"></p>
           <p className="text-center max-w-2xl w-[90vw] mt-4 text-gray-700 w-120">
-            Cada ensayo implica una nueva medicacion que podria mejorar algun
-            aspecto de la salud y la calidad de vida de las personas
+            Los ensayos clínicos exploran nuevas opciones terapéuticas con el
+            objetivo de mejorar la salud y el día a día de las personas.
           </p>
           <article className="flex justify-center gap-6 flex-wrap my-10 mt-20">
-            <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
-              <img src={user} alt="" className="h-14" />
-              La participacion siempre es voluntaria
+            <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
+              <img src={shild} alt="" className="h-14" />
+              Tu seguguridad es nuestra prioridad
             </div>
             <div className="w-50 h-60 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={smile} alt="" className="h-14" />
               La participacion es gratuita
+            </div>
+            <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
+              <img src={user} alt="" className="h-14" />
+              La participacion siempre es voluntaria
             </div>
             <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={prescription} alt="" className="h-14" />
@@ -69,16 +73,12 @@ const Home = () => {
             </div>
             <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={heart} alt="" className="h-14" />
-              El participante recibe atencion medica personalizada sin costo
+              Atencion medica personalizada sin costo
             </div>
             <div className="w-50 h-60 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user1} alt="" className="h-14" />
               Los participantes se pueden retirar del estudio en cualquier
               momento
-            </div>
-            <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
-              <img src={shild} alt="" className="h-14" />
-              La seguridad del paciente es prioritaria
             </div>
           </article>
         </section>
@@ -91,14 +91,14 @@ const Home = () => {
               Conoce los estudios de investigacion que se estan realizando para
               desarrollar nuevos medicamentos para tu enfermedad.
             </p>
-            <NavLink
-              to={"/participacion"}
+            <a
               className={
                 "text-gray-500 font-semibold border-2 border-gray-500 rounded-4xl  px-6 py-3 w-32 text-center hover:bg-gray-500 hover:text-white transition-all"
               }
+              href="https://www.unensayoparami.org/es/referentes/sitios/kynet-investigacion-clinica?pi="
             >
               VER MAS
-            </NavLink>
+            </a>
           </div>
           <img src={profile} alt="" className="h-48" />
         </section>

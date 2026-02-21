@@ -15,36 +15,20 @@ const Participacion = () => {
       <main className="bg-white">
         {/* BLOQUE DESTACADO */}
         <section className="relative bg-gray-100 py-20 px-6">
-          <div className="mx-auto max-w-6xl rounded-lg bg-white p-10 shadow-lg">
+          <div className="mx-auto max-w-6xl rounded-lg bg-white p-10 shadow-lg flex flex-col items-center">
             <h2 className="mb-8 text-center text-4xl font-semibold text-gray-700">
-              ¿Por qué participar de un ensayo clínico?
+              ¿Cuáles son las razones para participar en un estudio clínico?
             </h2>
 
-            <div className="grid gap-8 md:grid-cols-2 text-gray-600 leading-relaxed text-lg">
-              <p>
-                Participar en un ensayo clínico es un proceso que requiere
-                máxima responsabilidad y cuidado. Cada estudio está diseñado
-                bajo estrictos protocolos internacionales para garantizar la
-                seguridad de los pacientes y la validez científica de los
-                resultados.
-                <br />
-                <br />
-                Antes de comenzar, se evalúan detalladamente todos los riesgos y
-                beneficios potenciales, y se siguen lineamientos establecidos
-                por autoridades regulatorias como ANMAT, FDA y EMA.
-              </p>
-
-              <p>
-                La experiencia y el profesionalismo del equipo que realiza el
-                estudio son factores determinantes. En nuestra institución
-                contamos con médicos especializados y profesionales de la salud
-                con amplia trayectoria en investigación clínica.
-                <br />
-                <br />
-                Cada miembro del equipo está capacitado para velar por la
-                seguridad, el bienestar y los derechos de cada paciente durante
-                todas las etapas del ensayo.
-              </p>
+            <div className="grid gap-8 md:grid-cols-1 text-center text-gray-600 text-lg w-[700px]">
+              Entendemos que participar en un ensayo clínico es una decisión
+              importante. Por eso, en nuestro centro, nos enfocamos en que cada
+              paso sea seguro, transparente y profesional. Trabajamos bajo
+              protocolos estrictos para cuidar tu salud y garantizar resultados
+              científicos válidos. Contamos con un equipo de especialistas
+              dedicados que te acompañará en todo momento, brindándote una
+              atención personalizada basada en años de experiencia y un profundo
+              respeto por tu seguridad y bienestar.
             </div>
 
             <div className="mt-10 text-center">
@@ -55,11 +39,12 @@ const Participacion = () => {
                 bg-[#e2ec55]
                 px-8
                 py-3
-                font-semibold
+                font-bold
                 text-gray-700
                 transition
                 hover:shadow-lg
                 cursor-pointer
+                text-3xl
               "
               >
                 Quiero Participar
@@ -78,11 +63,12 @@ const Participacion = () => {
               </h2>
               <div className="mb-4 h-1 w-16 bg-[#e2ec55]" />
               <p className="text-lg">
-                Es el estudio controlado que realiza un grupo de médicos
-                investigadores en personas voluntarias para comprobar la
-                eficacia y seguridad de nuevos medicamentos, procedimientos,
-                dispositivos o vacunas. Está supervisado y aprobado por las
-                autoridades de salud.
+                Es una investigación médica realizada con personas que eligen
+                participar voluntariamente. En estos estudios, un equipo de
+                especialistas analiza nuevas opciones para la salud
+                (medicamentos o procedimientos) para confirmar que funcionan
+                correctamente y son seguros. Es un proceso controlado paso a
+                paso y siempre aprobado por organismos oficiales
               </p>
             </div>
 
@@ -93,8 +79,11 @@ const Participacion = () => {
               </h2>
               <div className="mb-4 h-1 w-16 bg-[#e2ec55]" />
               <p className="text-lg">
-                Para comprobar si un nuevo tratamiento es eficaz y seguro, y si
-                aporta algún beneficio adicional a lo ya conocido.
+                Se realiza para confirmar que un nuevo tratamiento funciona
+                correctamente y es seguro para las personas. El propósito
+                principal es descubrir si esta nueva opción ofrece mejores
+                resultados o mayores beneficios que los tratamientos que ya se
+                utilizan actualmente.
               </p>
             </div>
 
@@ -105,25 +94,13 @@ const Participacion = () => {
               </h2>
               <div className="mb-4 h-1 w-16 bg-[#e2ec55]" />
               <p className="text-lg">
-                Sí. Nuestros estudios se encuentran en su mayoría entre las
-                fases 2 y 4. Un Comité de Ética Independiente supervisa la
-                seguridad de los pacientes y el cumplimiento de las Buenas
-                Prácticas Clínicas, protegiendo los derechos de los
-                participantes.
-              </p>
-            </div>
-
-            {/* Item */}
-            <div>
-              <h2 className="mb-2 text-2xl font-semibold">
-                ¿Qué significa ser participante en un ensayo clínico?
-              </h2>
-              <div className="mb-4 h-1 w-16 bg-[#e2ec55]" />
-              <p className="text-lg">
-                Significa participar de manera libre y voluntaria en un estudio
-                de investigación. El paciente recibe toda la información del
-                ensayo y decide libremente su participación, pudiendo retirarse
-                en cualquier momento.
+                Tu seguridad es nuestra prioridad. Participarás en
+                investigaciones que se encuentran en sus fases finales de
+                desarrollo, donde se busca confirmar la eficacia del tratamiento
+                antes de su salida al mercado. Este proceso está bajo
+                supervisión constante de un Comité de Ética y expertos en salud
+                que garantizan que el diseño del estudio sea ético, seguro y
+                respete tu integridad en todo momento.
               </p>
             </div>
 
@@ -134,10 +111,12 @@ const Participacion = () => {
               </h2>
               <div className="mb-4 h-1 w-16 bg-[#e2ec55]" />
               <p className="text-lg">
-                Contamos con más de 100 protocolos de investigación en fases
-                avanzadas (3 y 4). Todos los estudios incluyen medicación de
-                última generación y atención médica gratuita a través de un
-                equipo multidisciplinario que cuida el bienestar del paciente.
+                El principal beneficio es recibir una atención médica de alta
+                calidad. Durante el estudio, nuestro equipo de profesionales
+                monitorea tu salud de manera mucho más frecuente y detallada que
+                en una consulta habitual. Además, tenés la oportunidad de
+                mejorar tu condición de salud con terapias de última generación
+                mientras contribuís al avance de la medicina
               </p>
             </div>
           </div>

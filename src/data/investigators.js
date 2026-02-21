@@ -1,13 +1,13 @@
 export const investigators = [
   {
     id: 1,
-    firstName: "Juan",
-    lastName: "Pérez",
-    title: "MD, PhD",
+    firstName: "Juan Sebastian",
+    lastName: "Lasa",
+    title: "MD - 199929",
     role: "Investigador Principal",
-    specialty: "Cardiología",
+    specialty: "Gastroenterología",
     description:
-      "Especialista en ensayos clínicos cardiovasculares con más de 15 años de experiencia en investigación clínica.",
+      "Especialista en Gastroenterología y referente en el desarrollo de protocolos para Enfermedades Inflamatorias Intestinales con 13 años de experiencia en investigación clínica",
     image: "",
   },
   {

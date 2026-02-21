@@ -3,7 +3,7 @@ const Card1 = ({ titulo, info, color, textColor }) => {
     <div
       className={`
         w-[320px] sm:max-w-[320px]
-        md:h-[280px]
+        md:h-[310px]
         p-6 m-2
         rounded-tl-lg rounded-br-lg
         shadow-lg

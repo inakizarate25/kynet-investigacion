@@ -4,18 +4,13 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-gray-300">
       {/* Top */}
-      <div className="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-3">
+      <div className="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-3 items-center">
         {/* Brand */}
         <div>
-          <h3 className="text-xl font-bold text-white">
-            KYNET
+          <h3 className="text-2xl font-bold text-white">
+            Kynet
             <span className="ml-2 text-[#e2ec55]">Investigación</span>
           </h3>
-          <p className="mt-4 text-sm leading-relaxed">
-            Centro de investigación clínica especializado en ensayos de fase 3,
-            cumpliendo con los más altos estándares internacionales de seguridad
-            y calidad.
-          </p>
         </div>
 
         {/* Navigation */}
@@ -57,10 +52,10 @@ const Footer = () => {
             <li>
               ✉️{" "}
               <a
-                href="mailto:info@kynet.com.ar"
+                href="mailto:investigacionsc@kynet.com.ar"
                 className="hover:text-[#e2ec55] transition"
               >
-                info@kynet.com.ar
+                investigacionsc@kynet.com.ar
               </a>
             </li>
           </ul>

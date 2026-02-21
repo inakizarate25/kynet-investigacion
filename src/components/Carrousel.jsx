@@ -1,11 +1,15 @@
-import img from "../assets/amgen-1.svg";
-import img1 from "../assets/ARWR_BIG.svg";
-import img2 from "../assets/astrazeneca-seeklogo.svg";
-import img3 from "../assets/Logo_Bayer.svg.png";
-import img4 from "../assets/biofarma.png";
-import img5 from "../assets/Biogen-logo.png";
+import img1 from "../assets/astrazeneca-seeklogo.svg";
+import img2 from "../assets/sanofi-logo-2022.svg";
+import img3 from "../assets/Labcorp.svg";
+import img4 from "../assets/pngegg.png";
+import img5 from "../assets/jyj.png";
+import img6 from "../assets/novo.svg";
+import img7 from "../assets/crinetics.svg";
+import img8 from "../assets/ICONplc.svg";
+import img9 from "../assets/recordati.svg";
+import img10 from "../assets/argenx.svg";
 
-const logos = [img, img1, img2, img3, img4, img5];
+const logos = [img1, img2, img3, img4, img5, img6, img10, img7, img8, img9];
 
 const Carousel = () => {
   return (
