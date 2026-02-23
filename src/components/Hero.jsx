@@ -25,11 +25,6 @@ const Hero = () => {
           Calidad humana y técnica al servicio de la investigación clínica
           internacional.
         </p>
-
-        <div className="hero-actions">
-          <button className="btn-primary">Nuestros Proyectos</button>
-          <button className="btn-secondary">Saber Más</button>
-        </div>
       </div>
 
       <div className="hero-bottom-fade"></div>
