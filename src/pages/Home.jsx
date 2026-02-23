@@ -9,10 +9,11 @@ import prescription from "../assets/prescription-bottle.svg";
 import user1 from "../assets/user-minus.svg";
 import heart from "../assets/heart-medical.svg";
 import profile from "../assets/profile.jpg";
+import PageTransition from "../components/PageTransition.jsx";
 
 const Home = () => {
   return (
-    <>
+    <PageTransition>
       <Hero />
       <section className="min-h-screen flex flex-col bg-gray-100 w-full">
         <div className="flex flex-col justify-center items-center border-b py-10 md:flex-row">
@@ -103,7 +104,7 @@ const Home = () => {
           <img src={profile} alt="" className="h-48" />
         </section>
       </section>
-    </>
+    </PageTransition>
   );
 };
 export default Home;

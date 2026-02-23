@@ -1,10 +1,11 @@
 import FaqCard from "../components/FaqCard.jsx";
 import { faqs } from "../data/faqs.js";
 import PageHero from "../components/PageHero.jsx";
+import PageTransition from "../components/PageTransition.jsx";
 
 const Preguntas = () => {
   return (
-    <>
+    <PageTransition>
       {/* Title */}
       <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
@@ -35,7 +36,7 @@ const Preguntas = () => {
           </div>
         </div>
       </section>
-    </>
+    </PageTransition>
   );
 };
 

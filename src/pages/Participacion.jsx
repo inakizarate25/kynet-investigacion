@@ -1,7 +1,8 @@
 import { NavLink } from "react-router";
+import PageTransition from "../components/PageTransition.jsx";
 const Participacion = () => {
   return (
-    <>
+    <PageTransition>
       {/* Title */}
       <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
@@ -122,7 +123,7 @@ const Participacion = () => {
           </div>
         </section>
       </main>
-    </>
+    </PageTransition>
   );
 };
 

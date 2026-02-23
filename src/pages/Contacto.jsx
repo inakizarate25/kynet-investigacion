@@ -2,9 +2,10 @@ import phone from "../assets/phone.svg";
 import email from "../assets/envelope.svg";
 import location from "../assets/map-marker.svg";
 import PageHero from "../components/PageHero.jsx";
+import PageTransition from "../components/PageTransition";
 const Contacto = () => {
   return (
-    <>
+    <PageTransition>
       {/* HERO */}
       <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
@@ -118,7 +119,7 @@ const Contacto = () => {
           <p className="text-gray-900 text-2xl">investigacionsc@kynet.com.ar</p>
         </div>
       </div>
-    </>
+    </PageTransition>
   );
 };
 

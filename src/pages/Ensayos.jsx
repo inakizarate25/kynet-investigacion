@@ -2,6 +2,7 @@ import { useState } from "react";
 import Highlight from "../components/Highlight";
 import Card from "../components/Card";
 import ParticiparModal from "../components/ParticiparModal";
+import PageTransition from "../components/PageTransition";
 
 const Ensayos = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -13,8 +14,8 @@ const Ensayos = () => {
   };
 
   return (
-    <>
-      <main className="bg-gray-100 px-6 py-20">
+    <PageTransition>
+      <main className="bg-gray-100 px-6 py-50 ">
         <div className="mx-auto max-w-6xl text-center">
           {/* Title */}
           <h2 className="text-4xl text-gray-700">Ensayos clínicos</h2>
@@ -57,7 +58,7 @@ const Ensayos = () => {
         type={type}
         onClose={() => setOpenModal(false)}
       />
-    </>
+    </PageTransition>
   );
 };
 

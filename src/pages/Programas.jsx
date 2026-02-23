@@ -1,10 +1,11 @@
 import ProgramaCard from "../components/ProgramaCard.jsx";
 import { programas } from "../data/programas.js";
 import PageHero from "../components/PageHero.jsx";
+import PageTransition from "../components/PageTransition.jsx";
 
 const Programas = () => {
   return (
-    <>
+    <PageTransition>
       {/* Title */}
       <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
@@ -36,7 +37,7 @@ const Programas = () => {
           </div>
         </div>
       </section>
-    </>
+    </PageTransition>
   );
 };
 

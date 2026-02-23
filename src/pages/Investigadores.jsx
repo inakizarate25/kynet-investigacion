@@ -3,6 +3,7 @@ import InvestigatorCard from "../components/InvestigatorCard.jsx";
 import { investigators } from "../data/investigators.js";
 import PageHero from "../components/PageHero.jsx";
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+import PageTransition from "../components/PageTransition.jsx";
 
 const Investigadores = () => {
   const [search, setSearch] = useState("");
@@ -23,7 +24,7 @@ const Investigadores = () => {
   });
 
   return (
-    <>
+    <PageTransition>
       {/* Title */}
       <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
@@ -90,7 +91,7 @@ const Investigadores = () => {
           </div>
         </div>
       </section>
-    </>
+    </PageTransition>
   );
 };
 
