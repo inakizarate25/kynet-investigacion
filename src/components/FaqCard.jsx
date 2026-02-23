@@ -5,7 +5,7 @@ const FaqCard = ({ question, answer }) => {
       className="
         group
         relative
-        h-70
+        h-80
         cursor-pointer
         overflow-hidden
         rounded-tl-lg rounded-br-lg
