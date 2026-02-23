@@ -29,7 +29,7 @@ const Ensayos = () => {
             badge="Área para médicos"
             title="Soy médico"
             subtitle="¿Cómo participar de los ensayos?"
-            text="Para formar parte de nuestro equipo o para integrar nuestra red de derivadores de ensayos clínicos podés contactarte con nosotros en el siguiente enlace."
+            text={`Para formar parte de nuestro equipo o para integrar nuestra red de derivadores de ensayos clínicos podés contactarte con nosotros en el siguiente enlace.`}
             bg="bg-gray-700"
             txColor="text-white"
             onClick={() => handleOpen("medico")}
@@ -40,10 +40,10 @@ const Ensayos = () => {
             badge="Área para pacientes"
             title="Soy paciente"
             subtitle="¿Cómo participar de los ensayos?"
-            text="Consultá aquí toda la información sobre tratamientos nuevos y superadores, y accedé así a los tratamientos del futuro.
+            text={`Consultá aquí toda la información sobre tratamientos nuevos y superadores, y accedé así a los tratamientos del futuro.
             
-            
-            "
+           
+            `}
             bg="bg-white"
             txColor="text-gray-700"
             onClick={() => handleOpen("paciente")}

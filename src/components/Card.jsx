@@ -1,7 +1,10 @@
 const Card = ({ badge, title, subtitle, text, bg, txColor, onClick }) => {
   return (
-    <div className={`rounded-xl p-10 text-center shadow-md ${bg} ${txColor}`}>
-      <span className="inline-block rounded bg-black/20 px-3 py-1 text-xs">
+    <div
+      className={`rounded-xl p-10 text-center shadow-md ${bg} ${txColor} flex flex-col cursor-pointer justify-between items-center`}
+      onClick={onClick}
+    >
+      <span className="inline-block rounded bg-black/20 px-3 py-1 text-xs w-fit">
         {badge}
       </span>
 

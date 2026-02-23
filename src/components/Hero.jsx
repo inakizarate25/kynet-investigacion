@@ -2,35 +2,37 @@ import heroimg from "../assets/heroimg.jpg";
 
 const Hero = () => {
   return (
-    <section
-      className="relative w-full px-4 py-20 sm:py-24 md:py-32 text-white"
-      style={{
-        backgroundImage: `url(${heroimg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundColor: "rgba(0,0,0,0.7)",
-        backgroundBlendMode: "darken",
-      }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
+    <section className="hero-section">
+      {/* Contenedor de imagen con efecto zoom */}
+      <div className="hero-bg-wrapper">
+        <img
+          src={heroimg}
+          alt="Medicina del futuro"
+          className="hero-bg-image"
+        />
+        <div className="hero-overlay"></div>
+      </div>
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center text-center">
-        <p className="mb-6 rounded-tl-lg rounded-br-lg bg-gray-700 px-4 py-2 text-sm sm:text-base opacity-90">
-          Desde Argentina, hacia el mundo
-        </p>
+      <div className="hero-content">
+        <div className="hero-badge">Desde Argentina, hacia el mundo</div>
 
-        <h1 className="mb-6 text-3xl font-semibold sm:text-4xl md:text-5xl">
-          Construyendo hoy la{" "}
-          <span className="text-[#e2ec55]">Medicina del futuro</span>
+        <h1 className="hero-title">
+          Construyendo hoy la <br className="desktop-only" />
+          <span className="highlight">Medicina del futuro</span>
         </h1>
 
-        <p className="max-w-3xl text-base opacity-90 sm:text-lg">
+        <p className="hero-description">
           Calidad humana y técnica al servicio de la investigación clínica
-          internacional
+          internacional.
         </p>
+
+        <div className="hero-actions">
+          <button className="btn-primary">Nuestros Proyectos</button>
+          <button className="btn-secondary">Saber Más</button>
+        </div>
       </div>
+
+      <div className="hero-bottom-fade"></div>
     </section>
   );
 };

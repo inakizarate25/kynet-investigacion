@@ -96,18 +96,18 @@ const Contacto = () => {
         </div>
       </section>
       <div className="bg-gray-100 flex items-center justify-center mb-16 gap-8 flex-wrap">
-        <div className="flex items-center gap-4 bg-[#e2ec55] p-4 mb-4 w-auto h-20 rounded-2xl shadow-xl">
+        <div className="flex items-center justify-center gap-4 bg-[#e2ec55] p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-xl ">
           <img src={phone} alt="phone" className="h-8" />
           <p className="text-xl">+54 9 11 4093 3209</p>
         </div>
-        <div className="flex items-center gap-4 bg-gray-700 p-4 mb-4 w-auto h-20 rounded-2xl shadow-2xl">
+        <div className="flex items-center justify-center gap-4 bg-gray-700 p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-2xl">
           <img src={location} alt="location" className="h-8" />
           <div>
             <p className="text-white text-2xl">Av. Pueyrredon 2446</p>
             <p className="text-white">Buenos Aires, Argentina</p>
           </div>
         </div>
-        <div className="flex items-center gap-4 bg-white p-4 mb-4 w-auto h-20 rounded-2xl shadow-xl">
+        <div className="flex items-center gap-4 bg-white p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-xl">
           <img src={email} alt="email" className="h-8" />
           <p className="text-gray-900 text-2xl">investigacionsc@kynet.com.ar</p>
         </div>

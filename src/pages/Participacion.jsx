@@ -20,7 +20,7 @@ const Participacion = () => {
               ¿Cuáles son las razones para participar en un estudio clínico?
             </h2>
 
-            <div className="grid gap-8 md:grid-cols-1 text-center text-gray-600 text-lg w-[700px]">
+            <div className="grid gap-8 md:grid-cols-1 text-center text-gray-600 text-lg lg:w-[700px]">
               Entendemos que participar en un ensayo clínico es una decisión
               importante. Por eso, en nuestro centro, nos enfocamos en que cada
               paso sea seguro, transparente y profesional. Trabajamos bajo
@@ -44,7 +44,7 @@ const Participacion = () => {
                 transition
                 hover:shadow-lg
                 cursor-pointer
-                text-3xl
+                lg:text-3xl
               "
               >
                 Quiero Participar

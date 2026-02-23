@@ -54,31 +54,31 @@ const Home = () => {
             Los ensayos clínicos exploran nuevas opciones terapéuticas con el
             objetivo de mejorar la salud y el día a día de las personas.
           </p>
-          <article className="flex justify-center gap-6 flex-wrap my-10 mt-20">
-            <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
+          <article className="flex justify-center gap-6 flex-wrap my-10 mt-20 w-screen lg:w-full">
+            <div className="lg:w-50 lg:h-60 w-40 h-50 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={shild} alt="" className="h-14" />
               Tu seguguridad es nuestra prioridad
             </div>
-            <div className="w-50 h-60 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="lg:w-50 lg:h-60 w-40 h-50 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={smile} alt="" className="h-14" />
               La participacion es gratuita
             </div>
-            <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="lg:w-50 lg:h-60 w-40 h-50 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user} alt="" className="h-14" />
               La participacion siempre es voluntaria
             </div>
-            <div className="w-50 h-60 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="lg:w-50 lg:h-60 w-40 h-50 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={prescription} alt="" className="h-14" />
               El participante recibe medicacion sin costo
             </div>
-            <div className="w-50 h-60 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
-              <img src={heart} alt="" className="h-14" />
-              Atencion medica personalizada sin costo
-            </div>
-            <div className="w-50 h-60 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
+            <div className="lg:w-50 lg:h-60 w-40 h-50 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user1} alt="" className="h-14" />
               Los participantes se pueden retirar del estudio en cualquier
               momento
+            </div>
+            <div className="lg:w-50 lg:h-60 w-40 h-50 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
+              <img src={heart} alt="" className="h-14" />
+              Atencion medica personalizada sin costo
             </div>
           </article>
         </section>
