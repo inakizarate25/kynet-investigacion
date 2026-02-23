@@ -66,21 +66,31 @@ const Navbar = () => {
 
         {/* Hamburger Button (Animado con CSS) */}
         <button
-          className="lg:hidden p-2 text-gray-700"
+          className="lg:hidden text-gray-700 focus:outline-none cursor-pointer"
           onClick={() => setOpen(!open)}
           aria-label="Abrir menú"
         >
-          <div className="w-6 h-5 relative flex flex-col justify-between">
-            <span
-              className={`h-0.5 w-full bg-current transform transition duration-300 ${open ? "rotate-45 translate-y-2" : ""}`}
-            />
-            <span
-              className={`h-0.5 w-full bg-current transition duration-300 ${open ? "opacity-0" : ""}`}
-            />
-            <span
-              className={`h-0.5 w-full bg-current transform transition duration-300 ${open ? "-rotate-45 -translate-y-2.5" : ""}`}
-            />
-          </div>
+          <svg
+            className="h-7 w-7"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+          >
+            {open ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
         </button>
       </div>
 
