@@ -58,7 +58,7 @@ const Navbar = () => {
           <NavLink
             to="/participacion"
             onClick={handleNavClick}
-            className="ml-4 rounded-full bg-[#e2ec55] px-6 py-2.5 text-sm font-bold text-gray-800 shadow-sm hover:shadow-md transition-all active:scale-95"
+            className="ml-4 rounded-lg bg-[#e2ec55] px-6 py-2.5 text-sm font-bold text-gray-800 shadow-sm hover:shadow-md transition-all active:scale-95"
           >
             QUIERO PARTICIPAR
           </NavLink>

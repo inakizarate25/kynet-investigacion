@@ -1,6 +1,7 @@
 import phone from "../assets/phone.svg";
 import email from "../assets/envelope.svg";
 import location from "../assets/map-marker.svg";
+import PageHero from "../components/PageHero.jsx";
 const Contacto = () => {
   return (
     <>
@@ -12,7 +13,12 @@ const Contacto = () => {
           <h1 className="text-4xl font-bold text-white">Contacto</h1>
         </div>
       </section>
-
+      {/* <PageHero
+        title="Ponte en"
+        highlight="Contacto"
+        subtitle="Estamos aquí para resolver tus dudas y avanzar juntos."
+        image="/assets/bg-contacto.jpg"
+      /> */}
       {/* CONTENT */}
       <section className="bg-muted px-6 py-16 bg-gray-100">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">

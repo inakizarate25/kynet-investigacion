@@ -1,5 +1,6 @@
 import ProgramaCard from "../components/ProgramaCard.jsx";
 import { programas } from "../data/programas.js";
+import PageHero from "../components/PageHero.jsx";
 
 const Programas = () => {
   return (
@@ -14,6 +15,12 @@ const Programas = () => {
           </h2>
         </div>
       </section>
+      {/* <PageHero
+        title="Nuestros"
+        highlight="Programas"
+        subtitle="Desarrollamos protocolos de investigación clínica con los más altos estándares globales."
+        image="/assets/bg-programas.jpg"
+      /> */}
       <section className="bg-muted px-6 py-16">
         <div className="mx-auto max-w-7xl">
           {/* Grid */}

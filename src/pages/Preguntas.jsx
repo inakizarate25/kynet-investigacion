@@ -1,5 +1,6 @@
 import FaqCard from "../components/FaqCard.jsx";
 import { faqs } from "../data/faqs.js";
+import PageHero from "../components/PageHero.jsx";
 
 const Preguntas = () => {
   return (
@@ -14,6 +15,12 @@ const Preguntas = () => {
           </h2>
         </div>
       </section>
+      {/* <PageHero
+        title="Preguntas"
+        highlight="Frecuentes"
+        subtitle="Despeja tus dudas sobre los procesos de investigación y participación."
+        image="/assets/bg-qya.jpg"
+      /> */}
       <section className="bg-muted px-6 py-16">
         <div className="mx-auto max-w-7xl">
           {/* Grid */}

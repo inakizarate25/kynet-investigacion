@@ -1,6 +1,7 @@
 import { useState } from "react";
 import InvestigatorCard from "../components/InvestigatorCard.jsx";
 import { investigators } from "../data/investigators.js";
+import PageHero from "../components/PageHero.jsx";
 const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const Investigadores = () => {
@@ -31,6 +32,12 @@ const Investigadores = () => {
           <h1 className="text-4xl font-bold text-white">Investigadores</h1>
         </div>
       </section>
+      {/* <PageHero
+        title="Nuestros"
+        highlight="Investigadores"
+        subtitle="Contamos con un equipo de profesionales de élite en investigación clínica."
+        image="/assets/bg-investigadores.jpg"
+      /> */}
       <section className="py-14 px-6 bg-gray-50 flex min-h-screen w-full">
         <div className="mx-auto max-w-7xl">
           {/* Search */}
