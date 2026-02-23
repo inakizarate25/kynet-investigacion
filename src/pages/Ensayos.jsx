@@ -15,7 +15,7 @@ const Ensayos = () => {
 
   return (
     <PageTransition>
-      <main className="bg-gray-100 px-6 py-50 ">
+      <main className="bg-gray-100 px-6 lg:py-50 py-30">
         <div className="mx-auto max-w-6xl text-center">
           {/* Title */}
           <h2 className="text-4xl text-gray-700">Ensayos clínicos</h2>

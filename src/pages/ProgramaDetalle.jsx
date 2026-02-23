@@ -17,7 +17,7 @@ const ProgramaDetalle = () => {
 
   return (
     <PageTransition>
-      <section className="bg-white px-6 py-16">
+      <section className="bg-white px-6 py-30">
         <div className="mx-auto max-w-4xl">
           {/* Title */}
           <h1 className="mb-4 text-3xl font-bold text-dark">

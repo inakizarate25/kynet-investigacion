@@ -1,6 +1,12 @@
 import { NavLink } from "react-router";
 import PageTransition from "../components/PageTransition.jsx";
 const Participacion = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <PageTransition>
       {/* Title */}
@@ -34,6 +40,7 @@ const Participacion = () => {
 
             <div className="mt-10 text-center">
               <NavLink
+                onClick={scrollToTop}
                 to="/quiero-participar"
                 className="
                 rounded-md

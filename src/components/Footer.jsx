@@ -1,6 +1,12 @@
 import { Link } from "react-router";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer className="bg-gray-800 text-gray-300">
       {/* Top */}
@@ -18,12 +24,20 @@ const Footer = () => {
           <h4 className="mb-4 font-semibold text-white">Navegación</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link to="/" className="hover:text-[#e2ec55] transition">
+              <Link
+                to="/"
+                className="hover:text-[#e2ec55] transition"
+                onClick={scrollToTop}
+              >
                 Inicio
               </Link>
             </li>
             <li>
-              <Link to="/programas" className="hover:text-[#e2ec55] transition">
+              <Link
+                to="/programas"
+                className="hover:text-[#e2ec55] transition"
+                onClick={scrollToTop}
+              >
                 Ensayos clínicos
               </Link>
             </li>
@@ -31,12 +45,17 @@ const Footer = () => {
               <Link
                 to="/investigadores"
                 className="hover:text-[#e2ec55] transition"
+                onClick={scrollToTop}
               >
                 Investigadores
               </Link>
             </li>
             <li>
-              <Link to="/contacto" className="hover:text-[#e2ec55] transition">
+              <Link
+                to="/contacto"
+                className="hover:text-[#e2ec55] transition"
+                onClick={scrollToTop}
+              >
                 Contacto
               </Link>
             </li>
