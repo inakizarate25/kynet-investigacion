@@ -3,6 +3,7 @@ import email from "../assets/envelope.svg";
 import location from "../assets/map-marker.svg";
 import PageHero from "../components/PageHero.jsx";
 import PageTransition from "../components/PageTransition";
+import ContactForm from "../components/ContactForm.jsx";
 const Contacto = () => {
   return (
     <PageTransition>
@@ -21,7 +22,7 @@ const Contacto = () => {
         image="/assets/bg-contacto.jpg"
       /> */}
       {/* CONTENT */}
-      <section className="bg-muted px-6 py-16 bg-gray-100">
+      <section className="bg-muted px-6 py-16">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
           {/* LEFT */}
           <div>
@@ -39,56 +40,7 @@ const Contacto = () => {
               </p>
             </div>
 
-            {/* Form */}
-            <h2 className="mb-4 text-xl font-semibold text-dark">
-              Dejanos un mensaje
-            </h2>
-
-            <form className="space-y-4">
-              <div className="grid gap-4 sm:grid-cols-2">
-                <input
-                  type="text"
-                  placeholder="Nombre"
-                  className="w-full rounded-lg border px-4 py-3 focus:border-[#e2ec55] focus:outline-none focus:ring-1 focus:ring-[#e2ec55]"
-                />
-
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="w-full rounded-lg border px-4 py-3 focus:border-[#e2ec55] focus:outline-none focus:ring-1 focus:ring-[#e2ec55]"
-                />
-              </div>
-
-              <input
-                type="tel"
-                placeholder="Teléfono"
-                className="w-full rounded-lg border px-4 py-3 focus:border-[#e2ec55] focus:outline-none focus:ring-1 focus:ring-[#e2ec55]"
-              />
-
-              <textarea
-                rows="4"
-                placeholder="Mensaje"
-                className="w-full rounded-lg border px-4 py-3 focus:border-[#e2ec55] focus:outline-none focus:ring-1 focus:ring-[#e2ec55]"
-              ></textarea>
-
-              <button
-                type="submit"
-                className="
-                  mt-2
-                  rounded-lg
-                  bg-[#e2ec55]
-                  px-8
-                  py-3
-                  font-semibold
-                  text-gray-900
-                  transition
-                  hover:opacity-90
-                  cursor-pointer
-                "
-              >
-                Enviar
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
           {/* RIGHT */}
@@ -102,7 +54,7 @@ const Contacto = () => {
           </div>
         </div>
       </section>
-      <div className="bg-gray-100 flex items-center justify-center mb-16 gap-8 flex-wrap">
+      <div className=" flex items-center justify-center mb-16 gap-8 flex-wrap">
         <div className="flex items-center justify-center gap-4 bg-[#e2ec55] p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-xl ">
           <img src={phone} alt="phone" className="h-8" />
           <p className="text-xl">+54 9 11 4093 3209</p>
