@@ -2,92 +2,105 @@ import { useState } from "react";
 import InvestigatorCard from "../components/InvestigatorCard.jsx";
 import { investigators } from "../data/investigators.js";
 import PageHero from "../components/PageHero.jsx";
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 import PageTransition from "../components/PageTransition.jsx";
+
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 const Investigadores = () => {
   const [search, setSearch] = useState("");
   const [letter, setLetter] = useState("All");
 
   const filtered = investigators.filter((inv) => {
-    const fullText = `
-      ${inv.firstName}
-      ${inv.lastName}
-      ${inv.role}
-      ${inv.specialty}
-    `.toLowerCase();
-
+    const fullText =
+      `${inv.firstName} ${inv.lastName} ${inv.role} ${inv.specialty}`.toLowerCase();
     const matchesSearch = fullText.includes(search.toLowerCase());
-    const matchesLetter = letter === "All" || inv.lastName.startsWith(letter);
-
+    const matchesLetter =
+      letter === "All" || inv.lastName.toUpperCase().startsWith(letter);
     return matchesSearch && matchesLetter;
   });
 
   return (
     <PageTransition>
-      {/* Title */}
-      <section className="relative h-[40vh] w-full bg-gray-800">
-        <div className="absolute inset-0 bg-gray-900/60"></div>
-
-        <div className="relative z-10 flex h-full items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">Investigadores</h1>
-        </div>
-      </section>
-      {/* <PageHero
+      <PageHero
         title="Nuestros"
         highlight="Investigadores"
-        subtitle="Contamos con un equipo de profesionales de élite en investigación clínica."
+        subtitle="Un equipo multidisciplinario comprometido con la excelencia científica y la ética profesional."
         image="/assets/bg-investigadores.jpg"
-      /> */}
-      <section className="py-14 px-6 bg-gray-50 flex min-h-screen w-full">
-        <div className="mx-auto max-w-7xl">
-          {/* Search */}
-          <input
-            type="text"
-            placeholder="Buscar por nombre, apellido, rol o especialidad"
-            className="mb-6 w-full rounded-lg border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-          />
+      />
 
-          {/* Alphabet filter */}
-          <div className="mb-8 flex flex-wrap gap-2 ">
-            <button
-              onClick={() => setLetter("All")}
-              className={`px-3 py-1 text-sm rounded border transition cursor-pointer ${
-                letter === "All"
-                  ? "border-[#e2ec55] bg-[#e2ec55]/10 text-dark font-semibold"
-                  : "border-gray-300 text-gray-600 hover:border-[#e2ec55]"
-              }`}
-            >
-              All
-            </button>
-
-            {alphabet.map((l) => (
-              <button
-                key={l}
-                onClick={() => setLetter(l)}
-                className={`px-3 py-1 text-sm rounded border transition cursor-pointer ${
-                  letter === l
-                    ? "border-[#e2ec55] bg-[#e2ec55]/10 text-dark font-semibold"
-                    : "border-gray-300 text-gray-600 hover:border-[#e2ec55]"
-                }`}
+      <section className="investigadores-section">
+        <div className="mx-auto max-w-7xl px-6">
+          {/* Barra de Filtros Flotante */}
+          <div className="filters-container">
+            <div className="search-wrapper">
+              <svg
+                className="search-icon"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                {l}
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Buscar por nombre, especialidad o rol..."
+                className="search-input"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </div>
+
+            <div className="alphabet-scroll">
+              <button
+                onClick={() => setLetter("All")}
+                className={`text-xs letter-btn ${letter === "All" ? "active" : ""}`}
+              >
+                Todos
               </button>
-            ))}
+              {alphabet.map((l) => (
+                <button
+                  key={l}
+                  onClick={() => setLetter(l)}
+                  className={`letter-btn ${letter === l ? "active" : ""}`}
+                >
+                  {l}
+                </button>
+              ))}
+            </div>
           </div>
 
-          {/* Results */}
-          <p className="mb-6 text-sm text-grayText">
-            {filtered.length} resultados encontrados
-          </p>
+          {/* Contador y Grid */}
+          <div className="results-header">
+            <p className="results-count">
+              Mostrando <span>{filtered.length}</span> especialistas
+            </p>
+            <div className="results-line"></div>
+          </div>
 
-          {/* Grid */}
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((inv) => (
-              <InvestigatorCard key={inv.id} investigator={inv} />
-            ))}
+          <div className="investigator-grid">
+            {filtered.length > 0 ? (
+              filtered.map((inv) => (
+                <InvestigatorCard key={inv.id} investigator={inv} />
+              ))
+            ) : (
+              <div className="no-results">
+                <p>No se encontraron investigadores con esos criterios.</p>
+                <button
+                  onClick={() => {
+                    setSearch("");
+                    setLetter("All");
+                  }}
+                  className="reset-btn"
+                >
+                  Limpiar filtros
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>

@@ -8,19 +8,19 @@ const Contacto = () => {
   return (
     <PageTransition>
       {/* HERO */}
-      <section className="relative h-[40vh] w-full bg-gray-800">
+      {/* <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
 
         <div className="relative z-10 flex h-full items-center justify-center">
           <h1 className="text-4xl font-bold text-white">Contacto</h1>
         </div>
-      </section>
-      {/* <PageHero
+      </section> */}
+      <PageHero
         title="Ponte en"
         highlight="Contacto"
         subtitle="Estamos aquí para resolver tus dudas y avanzar juntos."
         image="/assets/bg-contacto.jpg"
-      /> */}
+      />
       {/* CONTENT */}
       <section className="bg-muted px-6 py-16">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">

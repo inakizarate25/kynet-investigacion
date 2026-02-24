@@ -10,7 +10,11 @@ const ProgramaCard = ({ title, description, slug }) => {
         shadow-md
         transition
         hover:shadow-xl
-        h-80
+        h-90
+        flex
+        flex-col
+        justify-between
+        group
       "
     >
       <div className="mb-4 flex h-20 items-center justify-center rounded-lg bg-gray-100 text-5xl transition group-hover:bg-[#e2ec55]/20"></div>
@@ -37,6 +41,7 @@ const ProgramaCard = ({ title, description, slug }) => {
           text-dark
           transition
           hover:bg-[#e2ec55]
+          w-[140px]
         "
       >
         Ver programa

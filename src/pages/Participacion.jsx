@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import PageTransition from "../components/PageTransition.jsx";
+import PageHero from "../components/PageHero.jsx";
 const Participacion = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -10,7 +11,7 @@ const Participacion = () => {
   return (
     <PageTransition>
       {/* Title */}
-      <section className="relative h-[40vh] w-full bg-gray-800">
+      {/* <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
 
         <div className="relative z-10 flex h-full items-center justify-center text-center">
@@ -18,7 +19,13 @@ const Participacion = () => {
             Participación en ensayos clínicos
           </h2>
         </div>
-      </section>
+      </section> */}
+      <PageHero
+        title="Participación en"
+        highlight="ensayos clínicos"
+        subtitle="Descubre por qué tu participación es clave para avanzar en la investigación médica."
+        image="/assets/bg-qya.jpg"
+      />
       <main className="bg-white">
         {/* BLOQUE DESTACADO */}
         <section className="relative bg-gray-100 py-20 px-6">

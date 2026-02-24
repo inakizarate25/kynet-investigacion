@@ -2,38 +2,69 @@ import ProgramaCard from "../components/ProgramaCard.jsx";
 import { programas } from "../data/programas.js";
 import PageHero from "../components/PageHero.jsx";
 import PageTransition from "../components/PageTransition.jsx";
+import { NavLink } from "react-router";
 
 const Programas = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <PageTransition>
-      {/* Title */}
-      <section className="relative h-[40vh] w-full bg-gray-800">
-        <div className="absolute inset-0 bg-gray-900/60"></div>
-
-        <div className="relative z-10 flex h-full items-center justify-center">
-          <h2 className="text-4xl font-bold text-white text-center">
-            Programas de investigación
-          </h2>
-        </div>
-      </section>
-      {/* <PageHero
+      <PageHero
         title="Nuestros"
         highlight="Programas"
-        subtitle="Desarrollamos protocolos de investigación clínica con los más altos estándares globales."
+        subtitle="Desarrollamos protocolos de investigación clínica con los más altos estándares globales en diversas áreas terapéuticas."
         image="/assets/bg-programas.jpg"
-      /> */}
-      <section className="bg-muted px-6 py-16">
-        <div className="mx-auto max-w-7xl">
-          {/* Grid */}
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {programas.map((programa) => (
-              <ProgramaCard
+      />
+
+      <section className="programas-section">
+        <div className="mx-auto max-w-7xl px-6">
+          {/* Introducción a la sección */}
+          <div className="section-intro">
+            <span className="section-tag">Áreas de Investigación</span>
+            <h2 className="section-title">Innovación en cada especialidad</h2>
+            <p className="section-description">
+              Explora nuestras líneas de estudio actuales, donde combinamos
+              tecnología de vanguardia y rigor científico para mejorar la
+              calidad de vida de los pacientes.
+            </p>
+          </div>
+
+          {/* Grid de Programas */}
+          <div className="programas-grid">
+            {programas.map((programa, index) => (
+              <div
                 key={programa.id}
-                title={programa.title}
-                description={programa.description}
-                slug={programa.slug}
-              />
+                className="programa-card-wrapper"
+                style={{ "--delay": `${index * 0.1}s` }}
+              >
+                <ProgramaCard
+                  title={programa.title}
+                  description={programa.description}
+                  slug={programa.slug}
+                />
+              </div>
             ))}
+          </div>
+
+          {/* Banner de contacto rápido */}
+          <div className="programas-cta">
+            <h3>¿Deseas conocer más sobre un protocolo específico?</h3>
+            <p>
+              Nuestro equipo de coordinación está disponible para brindar
+              detalles técnicos a investigadores y patrocinadores.
+            </p>
+            <NavLink
+              to="/contacto"
+              className="btn-cta-light"
+              onClick={scrollToTop}
+            >
+              Consultar ahora
+            </NavLink>
           </div>
         </div>
       </section>

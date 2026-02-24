@@ -327,3 +327,247 @@ html {
     height: 40vh;
   }
 }
+.investigadores-section {
+  padding: 60px 0;
+  background-color: #f8fafc;
+  background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px);
+  background-size: 24px 24px; /* Patrón de puntos sutil */
+  min-height: 100vh;
+}
+
+/* Contenedor de filtros con Glassmorphism */
+.filters-container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  margin-top: -100px; /* Lo sube para que pise un poco el Hero */
+  position: relative;
+  z-index: 20;
+  margin-bottom: 40px;
+}
+
+.search-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  color: #94a3b8;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 14px 14px 45px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #e2ec55;
+  box-shadow: 0 0 0 4px rgba(226, 236, 85, 0.2);
+  outline: none;
+}
+
+/* Alphabet Scrollbar */
+.alphabet-scroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+.alphabet-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.letter-btn {
+  min-width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #64748b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.letter-btn:hover {
+  border-color: #e2ec55;
+  color: #1e293b;
+}
+
+.letter-btn.active {
+  background: #e2ec55;
+  border-color: #e2ec55;
+  color: #0f172a;
+}
+
+/* Header de resultados */
+.results-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.results-count {
+  font-size: 0.9rem;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.results-count span {
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.results-line {
+  height: 1px;
+  background: #e2e8f0;
+  width: 100%;
+}
+
+/* Grid */
+.investigator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* No Results */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px;
+  color: #64748b;
+}
+
+.reset-btn {
+  margin-top: 15px;
+  color: #0f172a;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+.programas-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+/* Introducción de la página */
+.section-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+
+.section-tag {
+  color: #889240; /* Una variante más sobria del amarillo/verde */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #0f172a;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Grid y Tarjetas */
+.programas-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.programa-card-wrapper {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardFadeIn 0.6s ease forwards;
+  animation-delay: var(--delay);
+}
+
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Banner inferior (Call to Action) */
+.programas-cta {
+  margin-top: 80px;
+  background: #0f172a;
+  border-radius: 24px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.programas-cta h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.programas-cta p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.btn-cta-light {
+  background: #e2ec55;
+  color: #0f172a;
+  padding: 15px 40px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-cta-light:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .programas-cta {
+    padding: 30px;
+  }
+  .programas-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -7,7 +7,7 @@ const Preguntas = () => {
   return (
     <PageTransition>
       {/* Title */}
-      <section className="relative h-[40vh] w-full bg-gray-800">
+      {/* <section className="relative h-[40vh] w-full bg-gray-800">
         <div className="absolute inset-0 bg-gray-900/60"></div>
 
         <div className="relative z-10 flex h-full items-center justify-center">
@@ -15,13 +15,13 @@ const Preguntas = () => {
             Preguntas Frecuentes
           </h2>
         </div>
-      </section>
-      {/* <PageHero
+      </section> */}
+      <PageHero
         title="Preguntas"
         highlight="Frecuentes"
         subtitle="Despeja tus dudas sobre los procesos de investigación y participación."
         image="/assets/bg-qya.jpg"
-      /> */}
+      />
       <section className="bg-muted px-6 py-16">
         <div className="mx-auto max-w-7xl">
           {/* Grid */}
