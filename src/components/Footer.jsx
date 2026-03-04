@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import logo from "../assets/logo-home.svg";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -12,12 +13,11 @@ const Footer = () => {
       {/* Top */}
       <div className="mx-auto max-w-7xl px-6 py-14 grid gap-10 md:grid-cols-3 items-center">
         {/* Brand */}
-        <div>
-          <h3 className="text-2xl font-bold text-white">
-            Kynet
-            <span className="ml-2 text-[#e2ec55]">Investigación</span>
-          </h3>
-        </div>
+        <img
+          src={logo}
+          alt="Logo Kynet Investigación"
+          className="w-32 h-auto"
+        />
 
         {/* Navigation */}
         <div>
