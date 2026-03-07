@@ -8,7 +8,7 @@ const Navbar = () => {
   // Datos de navegación para evitar repetición
   const navLinks = [
     { name: "INICIO", path: "/" },
-    { name: "INVESTIGADORES", path: "/investigadores" },
+    { name: "NOSOTROS", path: "/nosotros" },
     { name: "PROGRAMAS", path: "/programas" },
     { name: "Q&A", path: "/preguntas" },
     { name: "CONTACTO", path: "/contacto" },

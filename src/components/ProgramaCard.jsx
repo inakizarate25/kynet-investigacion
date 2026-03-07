@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-const ProgramaCard = ({ title, description, slug }) => {
+const ProgramaCard = ({ title, description, slug, image }) => {
   return (
     <article
       className="
@@ -17,7 +17,8 @@ const ProgramaCard = ({ title, description, slug }) => {
         group
       "
     >
-      <div className="mb-4 flex h-20 items-center justify-center rounded-lg bg-gray-100 text-5xl transition group-hover:bg-[#e2ec55]/20"></div>
+      <img src={image} alt={title} className="h-50 w-full object-cover" />
+
       {/* Title */}
       <h3 className="mb-3 text-lg font-semibold text-dark">{title}</h3>
 
@@ -41,7 +42,7 @@ const ProgramaCard = ({ title, description, slug }) => {
           text-dark
           transition
           hover:bg-[#e2ec55]
-          w-[140px]
+          w-32
         "
       >
         Ver programa

@@ -22,8 +22,8 @@ const Investigadores = () => {
   return (
     <PageTransition>
       <PageHero
-        title="Nuestros"
-        highlight="Investigadores"
+        title="Nuestro"
+        highlight="Equipo"
         subtitle="Un equipo multidisciplinario comprometido con la excelencia científica y la ética profesional."
         image="/assets/bg-investigadores.jpg"
       />

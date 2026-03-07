@@ -1,8 +1,16 @@
 import profileImg from "../assets/prof.jpg";
 
 const InvestigatorCard = ({ investigator }) => {
-  const { firstName, lastName, title, role, specialty, description, image } =
-    investigator;
+  const {
+    firstName,
+    lastName,
+    title,
+    role,
+    specialty,
+    description,
+    image,
+    mn,
+  } = investigator;
 
   return (
     <article
@@ -40,6 +48,7 @@ const InvestigatorCard = ({ investigator }) => {
             {firstName} {lastName}
           </h3>
           <p className="text-sm ">{title}</p>
+          <p className="text-xs text-gray-500">{mn}</p>
         </div>
       </div>
 

@@ -26,28 +26,44 @@ const ProgramaDetalle = () => {
 
           <div className="mb-8 h-1 w-24 rounded-full bg-[#e2ec55]" />
 
-          {/* Description */}
-          <p className="mb-10 text-gray-700 leading-relaxed whitespace-pre-line">
-            {programa.fullDescription}
-          </p>
-
           {/* Focus */}
           <h2 className="mb-4 text-xl font-semibold text-dark">
-            Áreas de enfoque
+            Enfoque del Programa
           </h2>
+          {/* Description */}
+          <p className="mb-10 text-gray-700 leading-relaxed whitespace-pre-line text-xl">
+            {programa.enfoque}
+          </p>
+          {/* Focus */}
+          <h2 className="mb-4 text-xl font-semibold text-dark">
+            Áreas Clave de Investigación
+          </h2>
+          <p className="mb-10 text-gray-700 leading-relaxed whitespace-pre-line text-xl">
+            {programa.clave}
+          </p>
+          {/* Focus */}
+          <h2 className="mb-4 text-xl font-semibold text-dark">Objetivo</h2>
+          <p className="mb-10 text-gray-700 leading-relaxed whitespace-pre-line text-xl">
+            {programa.objetivo}
+          </p>
 
-          <ul className="list-disc pl-6 text-gray-700 space-y-2">
-            {programa.focus.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
           {/* Program Doctors */}
           <h2 className="mt-12 mb-4 text-xl font-semibold text-dark">
-            Equipo médico
+            Program Leaders
           </h2>
 
           <div className="flex justify-start gap-6 flex-wrap">
-            {programa.doctors.map((doctor) => (
+            {programa.lideres.map((doctor) => (
+              <ProgramDoctorCard key={doctor.id} doctor={doctor} />
+            ))}
+          </div>
+          {/* Program Doctors */}
+          <h2 className="mt-12 mb-4 text-xl font-semibold text-dark">
+            Program Members
+          </h2>
+
+          <div className="flex justify-start gap-6 flex-wrap">
+            {programa.miembros.map((doctor) => (
               <ProgramDoctorCard key={doctor.id} doctor={doctor} />
             ))}
           </div>

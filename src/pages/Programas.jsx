@@ -27,11 +27,6 @@ const Programas = () => {
           <div className="section-intro">
             <span className="section-tag">Áreas de Investigación</span>
             <h2 className="section-title">Innovación en cada especialidad</h2>
-            <p className="section-description">
-              Explora nuestras líneas de estudio actuales, donde combinamos
-              tecnología de vanguardia y rigor científico para mejorar la
-              calidad de vida de los pacientes.
-            </p>
           </div>
 
           {/* Grid de Programas */}
@@ -43,6 +38,7 @@ const Programas = () => {
                 style={{ "--delay": `${index * 0.1}s` }}
               >
                 <ProgramaCard
+                  image={programa.img}
                   title={programa.title}
                   description={programa.description}
                   slug={programa.slug}

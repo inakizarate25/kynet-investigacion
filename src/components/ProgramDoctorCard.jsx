@@ -1,6 +1,6 @@
 import profileImg from "../assets/prof.jpg";
 const ProgramDoctorCard = ({ doctor }) => {
-  const { firstName, lastName, title, role, institution, image } = doctor;
+  const { firstName, lastName, role, image, mt } = doctor;
 
   return (
     <div className="flex items-center gap-4 rounded-lg border p-4 w-64">
@@ -11,12 +11,11 @@ const ProgramDoctorCard = ({ doctor }) => {
       />
 
       <div>
-        <p className="font-semibold text-dark">
+        <p className="font-semibold text-dark text-lg">
           {firstName} {lastName}
         </p>
-        <p className="text-sm text-gray-600">{title}</p>
         <p className="text-sm text-gray-500">{role}</p>
-        <p className="text-xs text-gray-400">{institution}</p>
+        <p className="text-sm text-gray-500">MN - {mt}</p>
       </div>
     </div>
   );

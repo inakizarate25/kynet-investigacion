@@ -1,253 +1,226 @@
+import endo from "../assets/endo.jpeg";
+import cardio from "../assets/cardio.jpeg";
+import gastro from "../assets/gastro.jpeg";
+
 export const programas = [
+  // programa 1
   {
     id: 1,
-    slug: "diabetes-hipertension",
-    title: "Diabetes & Hipertensión",
-    description:
-      "El programa se enfoca en la fisiopatología de la diabetes tipo 2 y las complicaciones asociadas a la hipertensión arterial.",
-    fullDescription: `
-La diabetes y la hipertensión representan una amenaza creciente para la salud pública a nivel mundial.
-
-Nuestro programa investiga los mecanismos fisiopatológicos, cardiovasculares y renales asociados a estas enfermedades, combinando investigación clínica, modelos experimentales y análisis computacional.
-
-El objetivo es desarrollar nuevas terapias que optimicen el tratamiento y reduzcan las complicaciones a largo plazo, mejorando la calidad de vida de los pacientes.
+    slug: "Endocrinología-Diabetes-Metabolismo",
+    title: "Endocrinología, Diabetes y Metabolismo",
+    description: "Trastornos Hormonales, Diabetes y Enfermedades Suprarrenales",
+    img: endo,
+    enfoque: `
+El sistema endocrino es el regulador central de la homeostasis. Nuestro programa aborda desde trastornos metabólicos masivos como la Diabetes Tipo 2 y la Obesidad, hasta enfermedades raras y complejas de las glándulas suprarrenales y la hipófisis. Investigamos la preservación de la función de las células β pancreáticas en la Diabetes Tipo 1 autoinmune y desarrollamos nuevas estrategias para el manejo del Síndrome de Cushing y la Hiperplasia Suprarrenal Congénita, donde el control del cortisol y la ACTH es crítico. El enfoque es integral, uniendo el control metabólico con la salud hormonal y la calidad de vida del paciente.
     `,
-    focus: [
-      "Fisiopatología de la diabetes tipo 2",
-      "Complicaciones cardiovasculares y renales",
-      "Hipertensión arterial y enfermedad vascular",
-      "Microcirculación y metabolismo",
-    ],
-    aim: "Liderar investigación traslacional, clínica y poblacional enfocada en diabetes, alteraciones metabólicas y enfermedades cardiovasculares asociadas.",
-    doctors: [
+    clave: `Diabetes y Preservación Celular: Uso de inmunoterapias para detener la progresión del daño pancreático en estadios tempranos de la enfermedad.
+
+Eje Hipotálamo-Hipófisis-Suprarrenal: Evaluación de antagonistas de receptores y nuevas moléculas para regular el exceso de corticoides y andrógenos.
+
+Enfermedades Autoinmunes Endocrinas: Investigación de terapias dirigidas para la Enfermedad de Graves no controlada con fármacos antitiroideos tradicionales.
+`,
+    objetivo: `Proporcionar soluciones terapéuticas personalizadas para pacientes con desórdenes hormonales y metabólicos complejos, integrando la investigación clínica de vanguardia con el cuidado clínico especializado para restaurar el equilibrio endocrino y mitigar las complicaciones crónicas.
+`,
+    lideres: [
       {
         id: 1,
-        firstName: "Etto",
-        lastName: "Eringa",
-        title: "MD, PhD",
-        role: "Director del Programa",
-        specialty: "Diabetes & Enfermedades Cardiovasculares",
-        description: null,
+        firstName: "Adrian Esteban",
+        lastName: "Proietti",
+        role: "MD",
+        mt: "102548",
         image: null,
       },
       {
         id: 2,
-        firstName: "Liffert",
-        lastName: "Vogt",
-        title: "MD, PhD",
-        role: "Co-Director",
-        specialty: "Nefrología",
-        description: null,
+        firstName: "Karina Ana",
+        lastName: "Miragaya",
+        role: "MD",
+        mt: "108232",
+        image: null,
+      },
+    ],
+    miembros: [
+      {
+        id: 1,
+        firstName: "Melania",
+        lastName: "Pajon",
+        role: "MD",
+        mt: "147804",
+        image: null,
+      },
+      {
+        id: 2,
+        firstName: "Lucila",
+        lastName: "Guntren",
+        role: "MD",
+        mt: "172346",
+        image: null,
+      },
+      {
+        id: 3,
+        firstName: "Valeria",
+        lastName: "Landivar",
+        role: "MD",
+        mt: "165049",
+        image: null,
+      },
+      {
+        id: 4,
+        firstName: "Anyella",
+        lastName: "Posadas Guzman",
+        role: "MD",
+        mt: "139822",
+        image: null,
+      },
+      {
+        id: 5,
+        firstName: "Gladys",
+        lastName: "Vairetta",
+        role: "LIC",
+        mt: "13417",
         image: null,
       },
     ],
   },
-
+  // programa 2
   {
     id: 2,
-    slug: "aterosclerosis-enfermedad-aortica",
-    title: "Aterosclerosis & Enfermedad Aórtica",
+    slug: "Gastroenterología-Digestiva",
+    title: "Gastroenterología Digestiva",
+    img: gastro,
     description:
-      "Investigación centrada en la aterosclerosis y sus complicaciones en medicina vascular, cardiología, neurología y nefrología.",
-    fullDescription: `
-Este programa se centra en el estudio de la aterosclerosis y la enfermedad aórtica, abordando sus mecanismos fisiopatológicos y sus manifestaciones clínicas.
-
-A través de investigación clínica y experimental, se busca comprender la progresión de la enfermedad y desarrollar estrategias terapéuticas innovadoras.
+      "Enfermedades Inflamatorias e Inmunomediadas del Aparato Digestivo",
+    enfoque: `
+Las enfermedades inflamatorias intestinales (EII), como la Colitis Ulcerosa y la Enfermedad de Crohn, representan un desafío creciente en la salud pública global debido a su naturaleza crónica y debilitante. Nuestro programa se dedica a desentrañar los mecanismos de la inflamación sistémica y local, evaluando terapias que van más allá del control de síntomas. Investigamos moléculas innovadoras, incluyendo inhibidores de citoquinas y nanobodies, que buscan la remisión profunda (clínica, endoscópica e histológica). Además, abordamos patologías con necesidades médicas insatisfechas, como la Enfermedad Celíaca refractaria, donde la dieta libre de gluten no es suficiente para evitar el daño vellositario.
     `,
-    focus: [
-      "Aterosclerosis y enfermedad arterial",
-      "Complicaciones cardiovasculares y neurológicas",
-      "Medicina vascular avanzada",
-      "Prevención y tratamiento de enfermedad aórtica",
-    ],
-    aim: "Comprender los mecanismos de la aterosclerosis para mejorar la prevención, el diagnóstico y el tratamiento de la enfermedad arterial.",
-    doctors: [
+    clave: `Modulación Selectiva: Evaluación de terapias que actúan sobre fenotipos específicos (ej. fenotipo eosinofílico en Colitis Ulcerosa).
+
+Nuevas Dianas Terapéuticas: Estudio de la eficacia de fármacos de nueva generación en el mantenimiento de la integridad de la barrera intestinal.
+
+Inmunología de Precisión: Investigación de respuestas inmunitarias en pacientes con Enfermedad Celíaca no respondedora al tratamiento estándar.
+`,
+    objetivo: `Liderar la investigación traslacional en gastroenterología para transformar el paradigma del tratamiento, pasando del manejo paliativo de la inflamación a estrategias terapéuticas que permitan la restauración funcional completa del tracto digestivo y la prevención de complicaciones a largo plazo.
+`,
+    lideres: [
       {
         id: 1,
-        firstName: "Etto",
-        lastName: "Eringa",
-        title: "MD, PhD",
-        role: "Director del Programa",
-        specialty: "Diabetes & Enfermedades Cardiovasculares",
-        description: null,
+        firstName: "Juan Sebastián",
+        lastName: "Lasa",
+        role: "MD",
+        mt: "119929",
         image: null,
       },
       {
         id: 2,
-        firstName: "Liffert",
-        lastName: "Vogt",
-        title: "MD, PhD",
-        role: "Co-Director",
-        specialty: "Nefrología",
-        description: null,
+        firstName: "Sonia Isabel ",
+        lastName: "Niveloni",
+        role: "MD",
+        mt: "61395",
+        image: null,
+      },
+    ],
+    miembros: [
+      {
+        id: 1,
+        firstName: "Agustin Izaguirre",
+        lastName: "Lasa",
+        role: "MD",
+        mt: "123398",
+        image: null,
+      },
+      {
+        id: 2,
+        firstName: "Jose Eduardo",
+        lastName: "Stringa",
+        role: "MD",
+        mt: "137606",
+        image: null,
+      },
+      {
+        id: 3,
+        firstName: "Maria Lujan",
+        lastName: "Espinet",
+        role: "MD",
+        mt: "165371",
+        image: null,
+      },
+      {
+        id: 4,
+        firstName: "Soledad Emilia",
+        lastName: "Martinez",
+        role: "MD",
+        mt: "157183",
         image: null,
       },
     ],
   },
-
+  // programa 3
   {
     id: 3,
-    slug: "hipertension-pulmonar-cuidados-criticos",
-    title: "Hipertensión Pulmonar & Cuidados Críticos",
-    description:
-      "Programas de investigación enfocados en trombosis, circulación pulmonar, falla cardíaca derecha y cuidados intensivos.",
-    fullDescription: `
-Este programa aborda la hipertensión pulmonar y su impacto en pacientes críticos, integrando investigación clínica y cuidados intensivos.
-
-Se estudian mecanismos de trombosis, circulación pulmonar y falla cardíaca derecha, con el objetivo de mejorar el manejo clínico y los resultados en pacientes graves.
+    slug: "Cardiología-Prevención-Cardiovascular",
+    title: "Cardiología y Prevención Cardiovascular",
+    img: cardio,
+    description: "Prevención de Eventos y Manejo del Riesgo Aterosclerótico",
+    enfoque: `
+A pesar de los avances en el control del colesterol LDL, la Enfermedad Cardiovascular Aterosclerótica (ASCVD) sigue siendo la principal causa de mortalidad. Nuestro programa se enfoca en el "riesgo residual" cardiovascular, investigando factores genéticos y metabólicos que antes no tenían tratamiento específico. Nos centramos en estudios de resultados cardiovasculares para evaluar moléculas que impactan directamente en la reducción de MACE (Eventos Adversos Cardiovasculares Mayores), como infartos de miocardio y accidentes cerebrovasculares, especialmente en poblaciones de alto riesgo o con enfermedad establecida.
     `,
-    focus: [
-      "Hipertensión pulmonar",
-      "Circulación pulmonar y trombosis",
-      "Cuidados críticos",
-      "Falla cardíaca derecha",
-    ],
-    aim: "Optimizar el abordaje clínico y terapéutico de pacientes con hipertensión pulmonar y enfermedades críticas asociadas.",
-    doctors: [
+    clave: `Lípidos y Lipoproteínas: Investigación pionera en la reducción de la Lipoproteína(a) con fármacos abordando un factor de riesgo genético clave.
+
+Protección Cardiovascular en Diabetes: Evaluación del impacto cardiovascular de nuevas terapias metabólicas.
+
+Prevención Secundaria: Ensayos clínicos de Fase III destinados a estabilizar la placa aterosclerótica y prevenir recurrencias en pacientes vulnerables.
+`,
+    objetivo: `Desarrollar y validar intervenciones farmacológicas disruptivas que reduzcan la carga de morbimortalidad cardiovascular global, optimizando la prevención primaria y secundaria mediante el control preciso de los mecanismos aterogénicos y trombóticos.
+`,
+    lideres: [
       {
         id: 1,
-        firstName: "Etto",
-        lastName: "Eringa",
-        title: "MD, PhD",
-        role: "Director del Programa",
-        specialty: "Diabetes & Enfermedades Cardiovasculares",
-        description: null,
+        firstName: "Federico Daniel",
+        lastName: "Lopez",
+        role: "MD",
+        mt: "88389",
         image: null,
       },
       {
         id: 2,
-        firstName: "Liffert",
-        lastName: "Vogt",
-        title: "MD, PhD",
-        role: "Co-Director",
-        specialty: "Nefrología",
-        description: null,
+        firstName: "Roberto Carlos",
+        lastName: "Campos",
+        role: "MD",
+        mt: "130398",
         image: null,
       },
     ],
-  },
-
-  {
-    id: 4,
-    slug: "cardiomiopatias-arritmias",
-    title: "Cardiomiopatías & Arritmias",
-    description:
-      "Investigación en insuficiencia cardíaca, cardiomiopatías y trastornos del ritmo cardíaco.",
-    fullDescription: `
-El programa se enfoca en el estudio de cardiomiopatías y arritmias, analizando su impacto clínico y fisiopatológico.
-
-La investigación se orienta al desarrollo de nuevas estrategias diagnósticas y terapéuticas para mejorar el tratamiento de la insuficiencia cardíaca y los trastornos del ritmo.
-    `,
-    focus: [
-      "Cardiomiopatías",
-      "Arritmias ventriculares y supraventriculares",
-      "Insuficiencia cardíaca",
-      "Electrofisiología clínica",
-    ],
-    aim: "Mejorar el diagnóstico y tratamiento de las enfermedades cardíacas mediante investigación clínica avanzada.",
-    doctors: [
+    miembros: [
       {
         id: 1,
-        firstName: "Etto",
-        lastName: "Eringa",
-        title: "MD, PhD",
-        role: "Director del Programa",
-        specialty: "Diabetes & Enfermedades Cardiovasculares",
-        description: null,
+        firstName: "Natalia",
+        lastName: "Coria",
+        role: "MD",
+        mt: "143178",
         image: null,
       },
       {
         id: 2,
-        firstName: "Liffert",
-        lastName: "Vogt",
-        title: "MD, PhD",
-        role: "Co-Director",
-        specialty: "Nefrología",
-        description: null,
-        image: null,
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    slug: "enfermedades-metabolicas",
-    title: "Enfermedades Metabólicas",
-    description:
-      "Ensayos clínicos orientados al estudio de obesidad, dislipidemias y síndrome metabólico.",
-    fullDescription: `
-Este programa investiga enfermedades metabólicas prevalentes, como obesidad y dislipidemias, y su relación con enfermedades cardiovasculares.
-
-Se desarrollan ensayos clínicos para evaluar nuevas terapias y estrategias preventivas.
-    `,
-    focus: [
-      "Obesidad",
-      "Dislipidemias",
-      "Síndrome metabólico",
-      "Prevención cardiovascular",
-    ],
-    aim: "Desarrollar tratamientos innovadores para enfermedades metabólicas y reducir su impacto en la salud cardiovascular.",
-    doctors: [
-      {
-        id: 1,
-        firstName: "Etto",
-        lastName: "Eringa",
-        title: "MD, PhD",
-        role: "Director del Programa",
-        specialty: "Diabetes & Enfermedades Cardiovasculares",
-        description: null,
+        firstName: "Emilio Victor",
+        lastName: "Montecchio",
+        role: "MD",
+        mt: "81657",
         image: null,
       },
       {
-        id: 2,
-        firstName: "Liffert",
-        lastName: "Vogt",
-        title: "MD, PhD",
-        role: "Co-Director",
-        specialty: "Nefrología",
-        description: null,
-        image: null,
-      },
-    ],
-  },
-
-  {
-    id: 6,
-    slug: "investigacion-respiratoria",
-    title: "Investigación Respiratoria",
-    description:
-      "Programas enfocados en enfermedades respiratorias crónicas y agudas.",
-    fullDescription: `
-Este programa se centra en la investigación de enfermedades respiratorias crónicas y agudas, integrando investigación clínica y cuidados especializados.
-
-El objetivo es mejorar el diagnóstico, tratamiento y calidad de vida de los pacientes con patologías respiratorias.
-    `,
-    focus: [
-      "EPOC",
-      "Asma",
-      "Enfermedades respiratorias crónicas",
-      "Investigación clínica respiratoria",
-    ],
-    aim: "Avanzar en el conocimiento y tratamiento de las enfermedades respiratorias mediante investigación clínica y traslacional.",
-    doctors: [
-      {
-        id: 1,
-        firstName: "Etto",
-        lastName: "Eringa",
-        title: "MD, PhD",
-        role: "Director del Programa",
-        specialty: "Diabetes & Enfermedades Cardiovasculares",
-        description: null,
+        id: 3,
+        firstName: "Emiliano",
+        lastName: "Levoratti",
+        role: "MD",
+        mt: "110208",
         image: null,
       },
       {
-        id: 2,
-        firstName: "Liffert",
-        lastName: "Vogt",
-        title: "MD, PhD",
-        role: "Co-Director",
-        specialty: "Nefrología",
-        description: null,
+        id: 4,
+        firstName: "Marcelo",
+        lastName: "Bressan",
+        role: "MD",
+        mt: "159247",
         image: null,
       },
     ],
