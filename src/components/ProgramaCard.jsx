@@ -10,7 +10,7 @@ const ProgramaCard = ({ title, description, slug, image }) => {
         shadow-md
         transition
         hover:shadow-xl
-        h-90
+        h-100
         flex
         flex-col
         justify-between
