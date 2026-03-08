@@ -34,7 +34,7 @@ const ProgramaDetalle = () => {
             className="w-full max-w-5xl h-40 lg:h-auto"
           />
         </div>
-        <div className="max-w-7xl flex  gap-16 lg:rounded-tr-3xl relative -top-20 bg-white ">
+        <div className="max-w-7xl flex  gap-16 lg:rounded-tr-3xl relative -top-20 bg-white p-3">
           {/* CONTENT */}
           <div className="max-w-4xl">
             {/* TITLE */}
@@ -97,37 +97,7 @@ const ProgramaDetalle = () => {
               </div>
             </section>
           </div>
-          {/* SIDEBAR
-          <aside className="hidden lg:block">
-            <div className="sticky top-32">
-              <p className="text-2xl font-semibold text-gray-500 mb-6">
-                En esta Sección
-              </p>
 
-              <nav className="flex flex-col gap-4 text-sm">
-                <a
-                  href="#aim"
-                  className="hover:text-black transition text-xl font-light"
-                >
-                  Aim
-                </a>
-
-                <a
-                  href="#leaders"
-                  className="hover:text-black transition text-xl font-light"
-                >
-                  Program Leaders
-                </a>
-
-                <a
-                  href="#members"
-                  className="hover:text-black transition text-xl font-light"
-                >
-                  Program Members
-                </a>
-              </nav>
-            </div>
-          </aside> */}
           <SidebarNav />
         </div>
       </section>
