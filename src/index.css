@@ -571,3 +571,85 @@ html {
     grid-template-columns: 1fr;
   }
 }
+/* Sidebar */
+/* Contenedor principal */
+.sidebar-container {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .sidebar-container {
+    display: block;
+    width: 250px;
+  }
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 8rem;
+}
+
+.sidebar-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+}
+
+/* Wrapper de la navegación */
+.sidebar-nav-wrapper {
+  position: relative;
+}
+
+/* La línea gris vertical de fondo */
+.sidebar-line-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #e5e7eb; /* Gris claro */
+}
+
+/* El indicador morado móvil */
+.sidebar-indicator {
+  position: absolute;
+  left: 0;
+  width: 3px; /* Más grueso como en la imagen */
+  height: 44px; /* Ajustado al alto del texto */
+  background-color: #e2ec55; /* Color morado de la imagen */
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Contenedor de links */
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo de cada link */
+.sidebar-link {
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #6b7280; /* Gris */
+  transition: color 0.2s ease;
+  line-height: 1.5;
+  height: 42px; /* Altura fija para que el cálculo de translateY sea exacto */
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link:hover {
+  color: #000;
+}
+
+/* Estado activo del texto */
+.sidebar-link.active {
+  color: #000;
+  font-weight: 500;
+}
