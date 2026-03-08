@@ -17,7 +17,7 @@ const Programas = () => {
       <PageHero
         title="Nuestros"
         highlight="Programas"
-        subtitle="Desarrollamos protocolos de investigación clínica con los más altos estándares globales en diversas áreas terapéuticas."
+        subtitle="Desarrollamos protocolos de investigación clínica con los más altos estándares globales."
         image="/assets/bg-programas.jpg"
       />
 

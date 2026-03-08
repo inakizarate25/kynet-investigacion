@@ -31,10 +31,10 @@ const ProgramaDetalle = () => {
           <img
             src={programa.img2}
             alt={programa.title}
-            className="w-full max-w-5xl h-auto"
+            className="w-full max-w-5xl h-40 lg:h-auto"
           />
         </div>
-        <div className="mx-auto max-w-7xl flex  gap-16 lg:rounded-tr-3xl relative -top-20 bg-white p-12">
+        <div className="max-w-7xl flex  gap-16 lg:rounded-tr-3xl relative -top-20 bg-white ">
           {/* CONTENT */}
           <div className="max-w-4xl">
             {/* TITLE */}
