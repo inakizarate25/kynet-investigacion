@@ -16,7 +16,7 @@ const Home = () => {
     <PageTransition>
       <Hero />
       <section className="min-h-screen flex flex-col bg-gray-100 w-full">
-        <div className="flex flex-col justify-center items-center  py-10 md:flex-row">
+        <div className="flex justify-center items-center  py-10 flex-wrap gap-10 w-full">
           <Card1
             titulo={"Exelencia cientifica"}
             info={

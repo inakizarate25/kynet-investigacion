@@ -1,3 +1,29 @@
+// import proietti from "../assets/drs/proietti.webp";
+// import miragaya from "../assets/drs/miragaya.webp";
+// import pajon from "../assets/drs/pajon.webp";
+// import guntren from "../assets/drs/guntren.webp";
+// import landivar from "../assets/drs/landivar.webp";
+// import posadas from "../assets/drs/posadas.webp";
+// import vairetta from "../assets/drs/vairetta.webp";
+// import lasa from "../assets/drs/lasa.webp";
+// import niveloni from "../assets/drs/niveloni.webp";
+// import izaguirre from "../assets/drs/izaguirre.webp";
+// import stringa from "../assets/drs/stringa.webp";
+// import espinet from "../assets/drs/espinet.webp";
+// import martinez from "../assets/drs/martinez.webp";
+// import lopez from "../assets/drs/lopez.webp";
+// import campos from "../assets/drs/campos.webp";
+// import coria from "../assets/drs/coria.webp";
+// import montecchio from "../assets/drs/montecchio.webp";
+// import levoratti from "../assets/drs/levoratti.webp";
+// import bressan from "../assets/drs/bressan.webp";
+// import polar from "../assets/polar.webp";
+// import garrido from "../assets/garrido.webp";
+// import scallan from "../assets/scallan.webp";
+// import carrillo from "../assets/carrillo.webp";
+// import aguilar from "../assets/aguilar.webp";
+// import carreras from "../assets/carreras.webp";
+
 export const investigators = [
   {
     id: 1,
