@@ -1,6 +1,12 @@
 import { Link } from "react-router";
 
 const ProgramaCard = ({ title, description, slug, image }) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <article
       className="
@@ -44,6 +50,7 @@ const ProgramaCard = ({ title, description, slug, image }) => {
           hover:bg-[#e2ec55]
           w-32
         "
+        onClick={scrollToTop}
       >
         Ver programa
       </Link>

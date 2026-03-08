@@ -1,6 +1,9 @@
 import endo from "../assets/endo.jpeg";
 import cardio from "../assets/cardio.jpeg";
 import gastro from "../assets/gastro.jpeg";
+import diabetes1 from "../assets/diabetes1.png";
+import gastro1 from "../assets/gastro1.png";
+import cardio1 from "../assets/cardiologia1.png";
 
 export const programas = [
   // programa 1
@@ -10,6 +13,7 @@ export const programas = [
     title: "Endocrinología, Diabetes y Metabolismo",
     description: "Trastornos hormonales, diabetes y enfermedades suprarrenales",
     img: endo,
+    img2: diabetes1,
     enfoque: `
 El sistema endocrino es el regulador central de la homeostasis. Nuestro programa aborda desde trastornos metabólicos masivos como la Diabetes Tipo 2 y la Obesidad, hasta enfermedades raras y complejas de las glándulas suprarrenales y la hipófisis. Investigamos la preservación de la función de las células β pancreáticas en la Diabetes Tipo 1 autoinmune y desarrollamos nuevas estrategias para el manejo del Síndrome de Cushing y la Hiperplasia Suprarrenal Congénita, donde el control del cortisol y la ACTH es crítico. El enfoque es integral, uniendo el control metabólico con la salud hormonal y la calidad de vida del paciente.
     `,
@@ -89,6 +93,7 @@ Enfermedades autoinmunes endocrinas: investigación de terapias dirigidas para l
     slug: "Gastroenterología-Digestiva",
     title: "Gastroenterología Digestiva",
     img: gastro,
+    img2: gastro1,
     description:
       "Enfermedades inflamatorias e inmunomediadas del aparato digestivo",
     enfoque: `
@@ -162,6 +167,7 @@ Inmunología de precisión: investigación de respuestas inmunitarias en pacient
     slug: "Cardiología-Prevención-Cardiovascular",
     title: "Cardiología y Prevención Cardiovascular",
     img: cardio,
+    img2: cardio1,
     description: "Prevención de eventos y manejo del riesgo aterosclerótico",
     enfoque: `
 A pesar de los avances en el control del colesterol LDL, la Enfermedad Cardiovascular Aterosclerótica (ASCVD) sigue siendo la principal causa de mortalidad. Nuestro programa se enfoca en el "riesgo residual" cardiovascular, investigando factores genéticos y metabólicos que antes no tenían tratamiento específico. Nos centramos en estudios de resultados cardiovasculares para evaluar moléculas que impactan directamente en la reducción de MACE (Eventos Adversos Cardiovasculares Mayores), como infartos de miocardio y accidentes cerebrovasculares, especialmente en poblaciones de alto riesgo o con enfermedad establecida.

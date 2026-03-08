@@ -577,7 +577,7 @@ html {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1180px) {
   .sidebar-container {
     display: block;
     width: 250px;

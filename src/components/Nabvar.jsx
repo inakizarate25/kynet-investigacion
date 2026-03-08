@@ -32,7 +32,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="lg:absolute fixed top-0 left-0 z-[100] w-full bg-white/95 backdrop-blur-md shadow-sm h-[70px] flex items-center">
+    <nav className="lg:absolute fixed top-0 left-0 z-[100] w-full bg-white/95 backdrop-blur-md  h-[70px] flex items-center">
       <div className="mx-auto max-w-7xl w-full flex items-center justify-between px-6">
         {/* Logo */}
         <NavLink

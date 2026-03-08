@@ -3,6 +3,7 @@ import { programas } from "../data/programas.js";
 import ProgramDoctorCard from "../components/ProgramDoctorCard.jsx";
 import PageTransition from "../components/PageTransition.jsx";
 import SidebarNav from "../components/SidebarNav.jsx";
+import { Link } from "react-router";
 
 const ProgramaDetalle = () => {
   const { slug } = useParams();
@@ -18,8 +19,22 @@ const ProgramaDetalle = () => {
 
   return (
     <PageTransition>
-      <section className="bg-white py-28 px-6">
-        <div className="mx-auto max-w-7xl flex  gap-16">
+      <section className="bg-white py-28 px-6 flex flex-col gap-2 justify-center items-center max-w-350 mx-auto">
+        <Link
+          to="/programas"
+          className="text-gray-700 hover:text-gray-600 transition self-start mb-6 text-lg"
+        >
+          &larr; Volver a programas
+        </Link>
+
+        <div className="flex justify-start bg-gray-700 w-full max-w-350 items-start">
+          <img
+            src={programa.img2}
+            alt={programa.title}
+            className="w-full max-w-5xl h-auto"
+          />
+        </div>
+        <div className="mx-auto max-w-7xl flex  gap-16 lg:rounded-tr-3xl relative -top-20 bg-white p-12">
           {/* CONTENT */}
           <div className="max-w-4xl">
             {/* TITLE */}
