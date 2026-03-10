@@ -16,7 +16,7 @@ const Contacto = () => {
         </div>
       </section> */}
       <PageHero
-        title="Ponte en"
+        title="Ponete en"
         highlight="Contacto"
         subtitle="Estamos aquí para resolver tus dudas y avanzar juntos."
         image="/assets/bg-contacto.jpg"

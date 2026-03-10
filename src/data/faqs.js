@@ -9,7 +9,7 @@ export const faqs = [
     id: 2,
     question: "¿Cómo se protege la privacidad de los participantes?",
     answer:
-      "Tu privacidad se protege mediante un proceso llamado codificación de datos.Tu nombre nunca aparecerá en los resultados del estudio.Toda tu información médica se maneja bajo estrictas leyes de protección de datos personales con acceso restringido únicamente a personas autorizadas.",
+      "Tu privacidad se protege mediante un proceso llamado codificación de datos. Tu nombre nunca aparecerá en los resultados del estudio. Toda tu información médica se maneja bajo estrictas leyes de protección de datos personales con acceso restringido únicamente a personas autorizadas.",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const faqs = [
   },
   {
     id: 6,
-    question: "¿Que costos asume el paciente?",
+    question: "¿¿Qué costos asume el paciente?",
     answer:
       "Participar en un ensayo clínico NO TIENE NINGÚN COSTO para vos. Tanto la medicación en investigación como todos los análisis, visitas médicas y estudios adicionales requeridos por el protocolo son gratuitos.",
   },

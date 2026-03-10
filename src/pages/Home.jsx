@@ -18,7 +18,7 @@ const Home = () => {
       <section className="min-h-screen flex flex-col bg-gray-100 w-full">
         <div className="flex justify-center items-center  py-10 flex-wrap gap-10 w-full">
           <Card1
-            titulo={"Exelencia cientifica"}
+            titulo={"Excelencia científica"}
             info={
               "Profesionales de referencia liderando cada etapa de nuestros protocolos. Investigación clínica dirigida por líderes de opinión reconocidos en la comunidad científica latinoamericana e internacional."
             }
@@ -45,7 +45,7 @@ const Home = () => {
         <Carrousel />
         <section className="flex flex-col justify-center items-center px-10 py-10 mt-14 w-full">
           <h3 className="text-lg font-bold text-gray-600">
-            INVESTIGACIÓN CLINICA
+            INVESTIGACIÓN CLÍNICA
           </h3>
           <h4 className="text-3xl font-semibold max-w-100 text-center">
             Lo que necesitas saber antes de participar en un estudio
@@ -58,11 +58,11 @@ const Home = () => {
           <article className="flex justify-center gap-6 flex-wrap my-10 mt-20 w-screen lg:w-full">
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={shild} alt="" className="h-14" />
-              Tu seguguridad es nuestra prioridad
+              Tu seguridad es nuestra prioridad
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={smile} alt="" className="h-14" />
-              La participacion es gratuita
+              La participación es gratuita
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user} alt="" className="h-14" />
@@ -70,7 +70,7 @@ const Home = () => {
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={prescription} alt="" className="h-14" />
-              El participante recibe medicacion sin costo
+              El participante recibe medicación sin costo
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-white flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user1} alt="" className="h-14" />
@@ -79,7 +79,7 @@ const Home = () => {
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={heart} alt="" className="h-14" />
-              Atencion medica personalizada sin costo
+              Atención médica personalizada sin costo
             </div>
           </article>
         </section>
@@ -89,7 +89,7 @@ const Home = () => {
               Un ensayo para Mi
             </h4>
             <p className="text-gray-600 text-2xl">
-              Conoce los estudios de investigacion que se estan realizando para
+              Conocé los estudios de investigación que se están realizando para
               desarrollar nuevos medicamentos para tu enfermedad.
             </p>
             <a
@@ -98,7 +98,7 @@ const Home = () => {
               }
               href="https://www.unensayoparami.org/es/referentes/sitios/kynet-investigacion-clinica?pi="
             >
-              VER MAS
+              VER MÁS
             </a>
           </div>
           <img src={profile} alt="" className="h-48" />
