@@ -23,7 +23,7 @@ const ProgramaCard = ({ title, description, slug, image }) => {
         group
       "
     >
-      <img src={image} alt={title} className="h-50 w-full object-cover" />
+      <img src={image} alt="programa" className="h-50 w-full object-cover" />
 
       {/* Title */}
       <h3 className="mb-3 text-lg font-semibold text-dark">{title}</h3>
