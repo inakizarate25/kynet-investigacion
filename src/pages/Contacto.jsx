@@ -55,23 +55,24 @@ const Contacto = () => {
         </div>
       </section>
       <div className=" flex items-center justify-center mb-16 gap-8 flex-wrap">
-        <div className="flex items-center justify-center gap-4 bg-[#e2ec55] p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-xl ">
-          <img src={phone} alt="phone" className="h-8" />
-          <p className="text-xl">+54 9 11 4093 3209</p>
-        </div>
         <div className="flex items-center justify-center gap-4 bg-gray-700 p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-2xl">
           <img src={location} alt="location" className="h-8" />
           <div>
-            <p className="text-white lg:text-2xl text-xl">
-              Av. Pueyrredon 2446
-            </p>
+            <a
+              className="text-white lg:text-2xl text-xl"
+              href="https://maps.app.goo.gl/Uj2XEXMJDCVipQ7t9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Av. Pueyrredón 2446
+            </a>
             <p className="text-white">Buenos Aires, Argentina</p>
           </div>
         </div>
-        <div className="flex items-center gap-4 bg-white p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-xl">
+        <div className="flex items-center gap-4 bg-[#e2ec55] p-4 mb-4 w-full lg:w-[390px] mx-3 h-20 rounded-2xl shadow-xl">
           <img src={email} alt="email" className="h-8" />
           <a
-            className="text-gray-900 lg:text-2xl text-lg"
+            className="text-gray-900  lg:text-2xl text-lg"
             href="mailto:investigacionsc@kynet.com.ar"
           >
             investigacionsc@kynet.com.ar

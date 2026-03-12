@@ -66,8 +66,15 @@ const Footer = () => {
         <div>
           <h4 className="mb-4 font-semibold text-white">Contacto</h4>
           <ul className="space-y-2 text-sm">
-            <li>📍 Av. Pueyrredon 2446</li>
-            <li>📞 +54 9 11 4093 3209</li>
+            <li>
+              <a
+                href="https://maps.app.goo.gl/Uj2XEXMJDCVipQ7t9"
+                className="hover:text-[#e2ec55] transition"
+              >
+                📍 Av. Pueyrredón 2446
+              </a>
+            </li>
+
             <li>
               ✉️{" "}
               <a

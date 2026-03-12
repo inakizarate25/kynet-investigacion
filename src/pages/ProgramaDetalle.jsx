@@ -27,7 +27,7 @@ const ProgramaDetalle = () => {
           &larr; Volver a programas
         </Link>
 
-        <div className="flex justify-start bg-gray-700 w-full max-w-350 items-start">
+        <div className="flex justify-start bg-gray-200 w-full max-w-350 items-start">
           <img
             src={programa.img2}
             alt={programa.title}

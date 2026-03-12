@@ -66,7 +66,7 @@ const Home = () => {
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-[#e2ec55] flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={user} alt="" className="h-14" />
-              La participacion siempre es voluntaria
+              La participación siempre es voluntaria
             </div>
             <div className="lg:w-50 lg:h-60 w-40 h-50 bg-gray-600 text-gray-200 flex flex-col justify-center items-center px-4 text-center shadow-lg">
               <img src={prescription} alt="" className="h-14" />

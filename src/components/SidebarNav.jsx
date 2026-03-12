@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const sections = [
-  { id: "aim", label: "Objetivo" },
+  { id: "aim", label: "Descripción" },
   { id: "leaders", label: "Program Leaders" },
   { id: "members", label: "Program Members" },
 ];
