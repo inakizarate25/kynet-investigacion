@@ -15,7 +15,7 @@ export const programas = [
     img: endo,
     img2: diabetes1,
     enfoque: `
-El sistema endocrino es el regulador central de la homeostasis. Nuestro programa aborda desde trastornos metabólicos masivos como la Diabetes Tipo 2 y la Obesidad, hasta enfermedades raras y complejas de las glándulas suprarrenales y la hipófisis. Investigamos la preservación de la función de las células β pancreáticas en la Diabetes Tipo 1 autoinmune y desarrollamos nuevas estrategias para el manejo del Síndrome de Cushing y la Hiperplasia Suprarrenal Congénita, donde el control del cortisol y la ACTH es crítico. El enfoque es integral, uniendo el control metabólico con la salud hormonal y la calidad de vida del paciente.
+El sistema endocrino es el regulador central de la homeostasis. Nuestro programa aborda desde trastornos metabólicos frecuentes como la Diabetes Tipo 2 y la Obesidad, hasta enfermedades raras y complejas de las glándulas suprarrenales y la hipófisis. Investigamos la preservación de la función de las células β pancreáticas en la Diabetes Tipo 1 y desarrollamos nuevas estrategias para el manejo del Síndrome de Cushing y la Hiperplasia Suprarrenal Congénita, donde el control del cortisol y la ACTH es crítico. El enfoque es integral, uniendo el control metabólico con la salud hormonal y la calidad de vida del paciente.
     `,
     clave: `Diabetes y preservación celular: uso de inmunoterapias para detener la progresión del daño pancreático en estadios tempranos de la enfermedad.
 
@@ -23,7 +23,7 @@ Eje hipotálamo-hipófisis-suprarrenal: evaluación de antagonistas de receptore
 
 Enfermedades autoinmunes endocrinas: investigación de terapias dirigidas para la Enfermedad de Graves no controlada con fármacos antitiroideos tradicionales.
 `,
-    objetivo: `Proporcionar soluciones terapéuticas personalizadas para pacientes con desórdenes hormonales y metabólicos complejos, integrando la investigación clínica de vanguardia con el cuidado clínico especializado para restaurar el equilibrio endocrino y mitigar las complicaciones crónicas.
+    objetivo: `Proporcionar soluciones terapéuticas personalizadas para pacientes con desórdenes hormonales y metabólicos complejos, integrando la investigación clínica de vanguardia con el cuidado clínico especializado para restaurar el equilibrio endocrino y mitigar las complicaciones crónicas, buscando un beneficio en la salud de los pacientes.
 `,
     lideres: [
       {

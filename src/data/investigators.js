@@ -45,7 +45,7 @@ export const investigators = [
     mn: "MN - 108232",
     role: "Investigador Principal",
     specialty: "Endocrinología",
-    description: "Médica endocrinóloga.",
+    description: "Médica endocrinóloga, especializada en neuroendocrinología.",
     image: "",
   },
   {

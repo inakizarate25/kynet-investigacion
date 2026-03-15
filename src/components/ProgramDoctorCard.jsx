@@ -21,8 +21,7 @@ const ProgramDoctorCard = ({ doctor }) => {
         className="
           absolute 
           -left-10 sm:-left-8 
-           top-0 
-          - sm:translate-y-0
+           top-0 sm:-translate-y-px
           h-24 w-18 sm:h-30 sm:w-20 
           object-cover shadow-md sm:shadow-none
          
