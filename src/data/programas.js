@@ -90,8 +90,8 @@ Enfermedades autoinmunes endocrinas: investigación de terapias dirigidas para l
   // programa 2
   {
     id: 2,
-    slug: "Gastroenterología-Digestiva",
-    title: "Gastroenterología Digestiva",
+    slug: "Gastroenterología",
+    title: "Gastroenterología",
     img: gastro,
     img2: gastro1,
     description:

@@ -107,19 +107,18 @@ const InvestigatorCard = ({ investigator }) => {
       <div className="absolute top-0 left-0 w-12 h-[3px] bg-[#e2ec55] transition-all duration-500 group-hover:w-full" />
 
       <div className="flex flex-col gap-6">
-        {/* Layout de Cabecera: Foto y Metadata */}
         <div className="flex gap-6 items-start">
-          <div className="relative shrink-0">
+          {/* <div className="relative shrink-0">
             <img
               src={image || profileImg}
               alt={`${firstName} ${lastName}`}
               className="h-32 w-28 object-cover rounded-sm  group-hover:grayscale-0 transition-all duration-700"
             />
-            {/* Tag de Matrícula tipo "Laboratorio" */}
+
             <div className="mt-2 text-[10px] font-mono text-slate-400 tracking-tighter uppercase">
               {mn}
             </div>
-          </div>
+          </div> */}
 
           <div className="flex flex-col justify-start pt-1">
             <span className="text-[#e2ec55] bg-black text-[9px] font-bold px-2 py-0.5 rounded-full w-fit mb-2 tracking-widest uppercase">
@@ -130,6 +129,9 @@ const InvestigatorCard = ({ investigator }) => {
             </h3>
             <p className="text-sm font-medium text-slate-500 mt-1 italic">
               {title}
+            </p>
+            <p className="text-sm font-medium text-slate-500 mt-1 italic">
+              {mn}
             </p>
           </div>
         </div>
