@@ -11,6 +11,12 @@ import heart from "../assets/heart-medical.svg";
 import profile from "../assets/profile.jpg";
 import PageTransition from "../components/PageTransition.jsx";
 
+// Importa aquí tu logo de Kynet (ej: kynet-logo.png) y una imagen de fondo (ej: kynet-bg.jpg)
+// Para este ejemplo, usaré marcadores de posición visuales.
+// En tu proyecto real, asegúrate de tener estas imágenes en tu carpeta de assets.
+import kynetLogo from "../assets/logo-home.svg";
+import kynetBg from "../assets/banner-home.jpg";
+
 const Home = () => {
   return (
     <PageTransition>
@@ -83,6 +89,9 @@ const Home = () => {
             </div>
           </article>
         </section>
+
+        {/* Sección Enlace Institucional Visual y Vistosa */}
+
         <section className="flex justify-around items-center flex-col xl:flex-row bg-white px-10 py-14 mt-10 h-auto gap-10">
           <div className="flex flex-col gap-4 w-full xl:w-1/2">
             <h4 className="text-4xl font-bold text-gray-700">
@@ -101,7 +110,41 @@ const Home = () => {
               VER MÁS
             </a>
           </div>
+
           <img src={profile} alt="" className="h-48" />
+        </section>
+        <section
+          className="relative flex flex-col items-center justify-center bg-gray-900 text-white py-24 px-10 text-center bg-cover bg-center"
+          style={{ backgroundImage: `url(${kynetBg})` }}
+        >
+          {/* Overlay para mejorar legibilidad */}
+          <div className="absolute inset-0 bg-black opacity-60"></div>
+
+          {/* Contenido */}
+          <div className="relative z-10 flex flex-col items-center">
+            {/* Logo de Kynet */}
+            <img
+              src={kynetLogo}
+              alt="Logo Kynet Centro Médico"
+              className="h-20 mb-8"
+            />
+
+            <h4 className="text-4xl font-extrabold mb-5 tracking-tight">
+              Centro Médico Kynet
+            </h4>
+            <p className="text-xl max-w-2xl mb-12 text-gray-200">
+              Conocé más sobre nuestra institución, especialidades y staff
+              médico visitando nuestro sitio oficial.
+            </p>
+            <a
+              href="https://kynet.com.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#e2ec55] text-gray-900 font-bold rounded-4xl px-10 py-4 text-lg hover:bg-white transition-all shadow-xl scale-100 hover:scale-105"
+            >
+              IR AL SITIO OFICIAL
+            </a>
+          </div>
         </section>
       </section>
     </PageTransition>
