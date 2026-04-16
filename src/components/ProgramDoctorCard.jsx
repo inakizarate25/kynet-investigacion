@@ -15,7 +15,7 @@ const ProgramDoctorCard = ({ doctor }) => {
     "
     >
       {/* IMAGE */}
-      <img
+      {/* <img
         src={image || profileImg}
         alt={`${firstName} ${lastName}`}
         className="
@@ -26,7 +26,7 @@ const ProgramDoctorCard = ({ doctor }) => {
           object-cover shadow-md sm:shadow-none
          
         "
-      />
+      /> */}
 
       {/* INFO */}
       <div className="flex flex-col justify-center sm:justify-around h-full w-full ml-4 text-left">

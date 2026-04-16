@@ -11,11 +11,23 @@ const Investigadores = () => {
   const [letter, setLetter] = useState("All");
 
   const filtered = investigators.filter((inv) => {
-    const fullText =
-      `${inv.firstName} ${inv.lastName} ${inv.role} ${inv.specialty}`.toLowerCase();
-    const matchesSearch = fullText.includes(search.toLowerCase());
+    const searchText = search.toLowerCase();
+
+    // 🔍 Filtro por búsqueda (nombre, apellido, rol, especialidad)
+    const matchesSearch =
+      (inv.firstName || "").toLowerCase().includes(searchText) ||
+      (inv.lastName || "").toLowerCase().includes(searchText) ||
+      (inv.role || "").toLowerCase().includes(searchText) ||
+      (inv.specialty || "").toLowerCase().includes(searchText);
+
+    // 🔠 Filtro por letra (aplicado a todos los campos)
     const matchesLetter =
-      letter === "All" || inv.lastName.toUpperCase().startsWith(letter);
+      letter === "All" ||
+      (inv.firstName || "").toUpperCase().startsWith(letter) ||
+      (inv.lastName || "").toUpperCase().startsWith(letter) ||
+      (inv.role || "").toUpperCase().startsWith(letter) ||
+      (inv.specialty || "").toUpperCase().startsWith(letter);
+
     return matchesSearch && matchesLetter;
   });
 
@@ -30,7 +42,7 @@ const Investigadores = () => {
 
       <section className="investigadores-section">
         <div className="mx-auto max-w-7xl px-6">
-          {/* Barra de Filtros Flotante */}
+          {/* Barra de Filtros */}
           <div className="filters-container">
             <div className="search-wrapper">
               <svg
@@ -48,7 +60,7 @@ const Investigadores = () => {
               </svg>
               <input
                 type="text"
-                placeholder="Buscar por nombre, especialidad o rol..."
+                placeholder="Buscar por nombre, apellido, especialidad o rol..."
                 className="search-input"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -58,10 +70,13 @@ const Investigadores = () => {
             <div className="alphabet-scroll">
               <button
                 onClick={() => setLetter("All")}
-                className={`text-xs letter-btn ${letter === "All" ? "active" : ""}`}
+                className={`text-xs letter-btn ${
+                  letter === "All" ? "active" : ""
+                }`}
               >
                 Todos
               </button>
+
               {alphabet.map((l) => (
                 <button
                   key={l}
@@ -74,7 +89,7 @@ const Investigadores = () => {
             </div>
           </div>
 
-          {/* Contador y Grid */}
+          {/* Header resultados */}
           <div className="results-header">
             <p className="results-count">
               Mostrando <span>{filtered.length}</span> especialistas
@@ -82,6 +97,7 @@ const Investigadores = () => {
             <div className="results-line"></div>
           </div>
 
+          {/* Grid */}
           <div className="investigator-grid">
             {filtered.length > 0 ? (
               filtered.map((inv) => (

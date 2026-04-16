@@ -43,7 +43,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to="/investigadores"
+                to="/nosotros"
                 className="hover:text-[#e2ec55] transition"
                 onClick={scrollToTop}
               >
