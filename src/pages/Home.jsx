@@ -106,6 +106,8 @@ const Home = () => {
                 "text-gray-500 font-semibold border-2 border-gray-500 rounded-4xl  px-6 py-3 w-32 text-center hover:bg-gray-500 hover:text-white transition-all"
               }
               href="https://www.unensayoparami.org/es/referentes/sitios/kynet-investigacion-clinica?pi="
+              target="_blank"
+              rel="noopener noreferrer"
             >
               VER MÁS
             </a>
