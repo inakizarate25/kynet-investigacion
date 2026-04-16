@@ -128,8 +128,8 @@ export const investigators = [
   },
   {
     id: 10,
-    firstName: "Agustín Izaguirre",
-    lastName: "Lasa",
+    firstName: "Agustín",
+    lastName: "Izaguirre",
     title: "MD",
     mn: "MN - 123398",
     role: "Subinvestigador",
